@@ -140,8 +140,9 @@ MBProgressHUD *HUD;
         HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
         HUD.mode = MBProgressHUDModeCustomView;
         HUD.labelText = @"Finished";
-        [HUD hide:YES];
+        
         [self performSegueWithIdentifier:@"sentSegue" sender:self];
+        [HUD hide:YES];
     }
 }
 @end
