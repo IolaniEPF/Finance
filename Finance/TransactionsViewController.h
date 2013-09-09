@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "TransactionsView.h"
 #import "XPPointsView.h"
+#import "UICountingLabel.h"
 
 @interface TransactionsViewController : UIViewController
 @property (retain, nonatomic) IBOutlet TransactionsView *XPView;
 @property (retain, nonatomic) IBOutlet XPPointsView *CashView;
 @property (retain, nonatomic) IBOutlet UIButton *badgeButton;
 @property (retain, nonatomic) IBOutlet UIButton *XPButton;
+@property (retain, nonatomic) IBOutlet UICountingLabel *balanceLabel;
+@property (retain, nonatomic) IBOutlet UICountingLabel *XPLabel;
 
 @end

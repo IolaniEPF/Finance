@@ -44,6 +44,20 @@
         [self.XPButton setHidden:YES];
         [self.badgeButton setHidden:YES];
     }
+    NSNumberFormatter *formatter = [[[NSNumberFormatter alloc] init] autorelease];
+    formatter.numberStyle = kCFNumberFormatterDecimalStyle;
+    self.balanceLabel.formatBlock = ^NSString* (float value){
+        NSString* formatted = [formatter stringFromNumber:@((int)value)];
+        return [NSString stringWithFormat:@"Current Balance: $%@",formatted];
+    };
+    self.XPLabel.formatBlock = ^NSString* (float value){
+        NSString* formatted = [formatter stringFromNumber:@((int)value)];
+        return [NSString stringWithFormat:@"XP: %@pts",formatted];
+    };
+    [self.balanceLabel countFrom:0.0 to:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentBalance"] floatValue] withDuration:2.];
+    
+    [self.XPLabel countFrom:0.0 to:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentXP"] floatValue] withDuration:2.];
+    
 }
 - (void)reloadTables{
     [self.CashView reloadData];
@@ -55,6 +69,13 @@
         [self.XPButton setHidden:YES];
         [self.badgeButton setHidden:YES];
     }
+    [[[PFUser currentUser] objectForKey:@"Balances"] fetch];
+    
+    [self.balanceLabel countFrom:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentBalance"] floatValue] to:[[[[PFUser currentUser] objectForKey:@"Balances"] objectForKey:@"CashBalance"] floatValue] withDuration:2.];
+    [self.XPLabel countFrom:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentXP"] floatValue] to:[[[[PFUser currentUser] objectForKey:@"Balances"] objectForKey:@"ExperiencePoints"] floatValue] withDuration:2.];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:[[[PFUser currentUser] objectForKey:@"Balances"] objectForKey:@"ExperiencePoints"] forKey:@"currentXP"];
+    [[NSUserDefaults standardUserDefaults] setObject:[[[PFUser currentUser] objectForKey:@"Balances"] objectForKey:@"CashBalance"] forKey:@"currentBalance"];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -67,6 +88,8 @@
     [_CashView release];
     [_badgeButton release];
     [_XPButton release];
+    [_balanceLabel release];
+    [_XPLabel release];
     [super dealloc];
 }
 @end

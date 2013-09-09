@@ -11,7 +11,7 @@
 #import "RecipientCell.h"
 
 @interface TransactionRecipientViewController ()
-@property (retain, nonatomic) NSArray *users;
+@property (retain, nonatomic) NSMutableArray *users;
 @end
 
 @implementation TransactionRecipientViewController
@@ -38,8 +38,9 @@ MBProgressHUD *HUD;
     if([[[NSUserDefaults standardUserDefaults] objectForKey:@"transactionType"] isEqual:@"Deposit"]&&[[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@NO]){
         [userQuery whereKey:@"isStudent" equalTo:@NO];
     }
+    [userQuery whereKey:@"AvatarName" notEqualTo:[[PFUser currentUser] objectForKey:@"AvatarName"]];
     NSError *error = nil;
-    self.users = [userQuery findObjects:&error];
+    self.users = [[NSMutableArray alloc] initWithArray:[userQuery findObjects:&error]];
     if(error){
         NSString *errorString = [error localizedDescription];
         UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -97,34 +98,13 @@ MBProgressHUD *HUD;
     [newTransaction setObject:[[NSUserDefaults standardUserDefaults]objectForKey:@"transactionType"] forKey:@"TransactionType"];
     [newTransaction setObject:[[PFUser currentUser]objectForKey:@"AvatarName"] forKey:@"CreatedBy"];
     
-    PFQuery *myBalanceQuery = [PFQuery queryWithClassName:@"Balances"];
-    [myBalanceQuery whereKey:@"AvatarName" equalTo:[[PFUser currentUser] objectForKey:@"AvatarName"]];
-    PFObject *myBalance = [myBalanceQuery getFirstObject:&error];
-    PFQuery *recipientBalanceQuery = [PFQuery queryWithClassName:@"Balances"];
-    [recipientBalanceQuery whereKey:@"AvatarName" equalTo:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"]];
-    PFObject *recipientBalance = [recipientBalanceQuery getFirstObject:&error];
-    NSNumber *transactionAmount = [[NSUserDefaults standardUserDefaults]objectForKey:@"transactionAmount"];
-    
-    if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"transactionType"] isEqualToString:@"Payment"]){
-        [newTransaction setObject:[PFUser currentUser] forKey:@"Sender"];
-        [newTransaction setObject:[[PFUser currentUser] objectForKey:@"AvatarName"] forKey:@"SenderString"];
-        [newTransaction setObject:[self.users objectAtIndex:selectedRow] forKey:@"Recipient"];
-        [newTransaction setObject:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"] forKey:@"RecipientString"];
-        
-        [myBalance setObject:[NSNumber numberWithFloat: ([[myBalance objectForKey:@"CashBalance"] floatValue]-[transactionAmount floatValue])] forKey:@"CashBalance"];
-        [recipientBalance setObject:[NSNumber numberWithFloat:([[recipientBalance objectForKey:@"CashBalance"] floatValue]+[transactionAmount floatValue])] forKey:@"CashBalance"];
-
-    }else{
-        [newTransaction setObject:[PFUser currentUser] forKey:@"Recipient"];
-        [newTransaction setObject:[[PFUser currentUser] objectForKey:@"AvatarName"] forKey:@"RecipientString"];
-        [newTransaction setObject:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"] forKey:@"SenderString"];
-        [newTransaction setObject:[self.users objectAtIndex:selectedRow] forKey:@"Sender"];
-        
-        [myBalance setObject:[NSNumber numberWithFloat: ([[myBalance objectForKey:@"CashBalance"] floatValue]+[transactionAmount floatValue])] forKey:@"CashBalance"];
-        [recipientBalance setObject:[NSNumber numberWithFloat:([[recipientBalance objectForKey:@"CashBalance"] floatValue]-[transactionAmount floatValue])] forKey:@"CashBalance"];
-    }
-    [PFObject saveAll:[NSArray arrayWithObjects:myBalance,recipientBalance,newTransaction, nil] error:&error];
-    
+    //PFQuery *myBalanceQuery = [PFQuery queryWithClassName:@"Balances"];
+    //[myBalanceQuery whereKey:@"AvatarName" equalTo:[[PFUser currentUser] objectForKey:@"AvatarName"]];
+    //PFObject *myBalance = [myBalanceQuery getFirstObject:&error];
+    //PFQuery *recipientBalanceQuery = [PFQuery queryWithClassName:@"Balances"];
+    //[recipientBalanceQuery whereKey:@"AvatarName" equalTo:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"]];
+    //PFObject *recipientBalance = [recipientBalanceQuery getFirstObject:&error];
+    //NSNumber *transactionAmount = [[NSUserDefaults standardUserDefaults]objectForKey:@"transactionAmount"];
     if(error){
         [HUD hide:YES];
         NSString *errorString = [error localizedDescription];
@@ -136,13 +116,47 @@ MBProgressHUD *HUD;
         [errorAlert show];
         [errorAlert release];
     }else{
-        [[NSUserDefaults standardUserDefaults]setObject:[newTransaction objectId] forKey:@"sentTransactionID"];
-        HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
-        HUD.mode = MBProgressHUDModeCustomView;
-        HUD.labelText = @"Finished";
+        if ([[[NSUserDefaults standardUserDefaults]objectForKey:@"transactionType"] isEqualToString:@"Payment"]){
+            [newTransaction setObject:[PFUser currentUser] forKey:@"Sender"];
+            [newTransaction setObject:[[PFUser currentUser] objectForKey:@"AvatarName"] forKey:@"SenderString"];
+            [newTransaction setObject:[self.users objectAtIndex:selectedRow] forKey:@"Recipient"];
+            [newTransaction setObject:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"] forKey:@"RecipientString"];
+            /*
+            [myBalance setObject:[NSNumber numberWithFloat: ([[myBalance objectForKey:@"CashBalance"] floatValue]-[transactionAmount floatValue])] forKey:@"CashBalance"];
+            [recipientBalance setObject:[NSNumber numberWithFloat:([[recipientBalance objectForKey:@"CashBalance"] floatValue]+[transactionAmount floatValue])] forKey:@"CashBalance"];
+             */
+
+        }else{
+            [newTransaction setObject:[PFUser currentUser] forKey:@"Recipient"];
+            [newTransaction setObject:[[PFUser currentUser] objectForKey:@"AvatarName"] forKey:@"RecipientString"];
+            [newTransaction setObject:[[self.users objectAtIndex:selectedRow] objectForKey:@"AvatarName"] forKey:@"SenderString"];
+            [newTransaction setObject:[self.users objectAtIndex:selectedRow] forKey:@"Sender"];
+            /*
+            [myBalance setObject:[NSNumber numberWithFloat: ([[myBalance objectForKey:@"CashBalance"] floatValue]+[transactionAmount floatValue])] forKey:@"CashBalance"];
+            [recipientBalance setObject:[NSNumber numberWithFloat:([[recipientBalance objectForKey:@"CashBalance"] floatValue]-[transactionAmount floatValue])] forKey:@"CashBalance"];
+             */
+        }
+        //[PFObject saveAll:[NSArray arrayWithObjects:myBalance,recipientBalance,newTransaction, nil] error:&error];
+        [newTransaction save:&error];
         
-        [self performSegueWithIdentifier:@"sentSegue" sender:self];
-        [HUD hide:YES];
-    }
+        if(error){
+            [HUD hide:YES];
+            NSString *errorString = [error localizedDescription];
+            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                 message:errorString
+                                                                delegate:nil
+                                                       cancelButtonTitle:@"OK"
+                                                       otherButtonTitles:nil];
+            [errorAlert show];
+            [errorAlert release];
+        }else{
+            [[NSUserDefaults standardUserDefaults]setObject:[newTransaction objectId] forKey:@"sentTransactionID"];
+            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+            HUD.mode = MBProgressHUDModeCustomView;
+            HUD.labelText = @"Finished";
+            
+            [self performSegueWithIdentifier:@"sentSegue" sender:self];
+            [HUD hide:YES];
+        }}
 }
 @end

@@ -64,20 +64,22 @@ MBProgressHUD *HUD;
     RecipientCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recipientCell" forIndexPath:indexPath];
     cell.emailLabel.text = [[self.users objectAtIndex:indexPath.row] objectForKey:@"username"];
     cell.avatarNameLabel.text = [[self.users objectAtIndex:indexPath.row] objectForKey:@"AvatarName"];
+    if([self.selectedUsers containsObject:[self.users objectAtIndex:indexPath.row]]){
+        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+    }else{
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.nextButton setEnabled:YES];
-    if([self.selectedUsers containsObject:[self.users objectAtIndex:indexPath.row]]){
-        [self.selectedUsers removeObject:[self.users objectAtIndex:indexPath.row]];
-        [[tableView cellForRowAtIndexPath:indexPath] setHighlighted:NO animated:YES];
-        [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
-    }else{
-        [self.selectedUsers addObject:[self.users objectAtIndex:indexPath.row]];
-        [[tableView cellForRowAtIndexPath:indexPath] setHighlighted:NO animated:YES];
-        [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
-    }
+    [self.selectedUsers addObject:[self.users objectAtIndex:indexPath.row]];
+    [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryCheckmark];
+}
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.selectedUsers removeObject:[self.users objectAtIndex:indexPath.row]];
+    [[tableView cellForRowAtIndexPath:indexPath] setAccessoryType:UITableViewCellAccessoryNone];
 }
 
 

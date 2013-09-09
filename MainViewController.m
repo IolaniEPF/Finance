@@ -40,7 +40,7 @@ MBProgressHUD *HUD;
                                                  name:@"ReloadEverything"
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(refreshUserData)
+                                             selector:@selector(reloadBalances)
                                                  name:@"ReloadBalances"
                                                object:nil];
     [[UITabBar appearance] setSelectedImageTintColor:[UIColor whiteColor]];
@@ -184,6 +184,17 @@ MBProgressHUD *HUD;
     
     HUD.labelText = @"Updating transactions";
     
+    [self reloadBalances];
+    
+    HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.labelText = @"Finished";
+    
+    sleep(2);
+    [HUD hide:YES];
+}
+
+- (void)reloadBalances{
     [self.balanceLabel countFrom:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentBalance"] floatValue] to:[[[[[PFUser currentUser] objectForKey:@"Balances"] fetchIfNeeded] objectForKey:@"CashBalance"] floatValue] withDuration:2.];
     [self.XPLabel countFrom:[[[NSUserDefaults standardUserDefaults] objectForKey:@"currentXP"] floatValue] to:[[[[[PFUser currentUser] objectForKey:@"Balances"] fetchIfNeeded] objectForKey:@"ExperiencePoints"] floatValue] withDuration:2.];
     [[NSUserDefaults standardUserDefaults] setObject:[[[PFUser currentUser] objectForKey:@"Balances"] objectForKey:@"ExperiencePoints"] forKey:@"currentXP"];
@@ -194,13 +205,6 @@ MBProgressHUD *HUD;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadBadges"
                                                         object:nil
                                                       userInfo:nil];
-    
-    HUD.customView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]] autorelease];
-    HUD.mode = MBProgressHUDModeCustomView;
-    HUD.labelText = @"Finished";
-    
-    sleep(2);
-    [HUD hide:YES];
 }
 - (void)loadingError:(NSError *)error{
     NSString *errorString = [error localizedDescription];

@@ -31,7 +31,8 @@ static NSString * const kClientID =
     [Parse setApplicationId:@"JZBd7VGfhUOhZGQK6u7kbuWF4jCPi0EX9y0p6rGY"
                   clientKey:@"842XDuFJJqfJ6g3p1pVZdLT53EK7knfK1NawAr5d"];
     
-    [TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
+    //[TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
     [TestFlight takeOff:@"fa6c24f8-f3ee-4be6-accc-2364fda4589c"];
     
     PFACL *defaultACL = [PFACL ACL];
@@ -99,7 +100,7 @@ static NSString * const kClientID =
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadEverything"
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ReloadBalances"
                                                         object:nil
                                                       userInfo:nil];
 }

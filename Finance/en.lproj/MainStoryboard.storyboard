@@ -942,7 +942,7 @@
                                     <segue destination="3g4-7Y-UIK" kind="modal" modalPresentationStyle="formSheet" id="Nfn-jU-G20"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6a-aQ-10D">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Current Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6a-aQ-10D" customClass="UICountingLabel">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="dMq-Ee-kf2"/>
                                 </constraints>
@@ -950,7 +950,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Experience Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-vL-fgS">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Experience Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-vL-fgS" customClass="UICountingLabel">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="fB4-3H-zsY"/>
                                 </constraints>
@@ -987,8 +987,10 @@
                     <connections>
                         <outlet property="CashView" destination="p41-qW-j2m" id="ESC-l4-gs8"/>
                         <outlet property="XPButton" destination="nLo-ie-wag" id="Tg2-H6-KqW"/>
+                        <outlet property="XPLabel" destination="QTA-vL-fgS" id="ndx-ro-PCJ"/>
                         <outlet property="XPView" destination="cxH-5O-idE" id="ZfT-DP-Fwg"/>
                         <outlet property="badgeButton" destination="fsK-EB-MVT" id="GUU-8E-AIH"/>
+                        <outlet property="balanceLabel" destination="s6a-aQ-10D" id="bU5-hi-bwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCX-Xw-gbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1535,7 +1537,7 @@
                         <rect key="frame" x="0.0" y="64" width="540" height="556"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-Yu-irU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-Yu-irU">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="el8-5E-dDH"/>
@@ -1718,7 +1720,7 @@
                         <rect key="frame" x="0.0" y="64" width="540" height="556"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-Gl-d1u">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DHF-Gl-d1u">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="536" id="94m-tW-ntd"/>
@@ -1808,7 +1810,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-oV-tPg">
+                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ATb-oV-tPg">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="157" id="OL5-K2-lHc"/>
                                 </constraints>
@@ -2136,8 +2138,10 @@
             <relationships>
                 <relationship kind="outlet" name="CashView" candidateClass="XPPointsView"/>
                 <relationship kind="outlet" name="XPButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="XPLabel" candidateClass="UICountingLabel"/>
                 <relationship kind="outlet" name="XPView" candidateClass="TransactionsView"/>
                 <relationship kind="outlet" name="badgeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="balanceLabel" candidateClass="UICountingLabel"/>
             </relationships>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
@@ -2148,6 +2152,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICountingLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICountingLabel.h"/>
         </class>
         <class className="XPPointsView" superclassName="UITableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/XPPointsView.h"/>
