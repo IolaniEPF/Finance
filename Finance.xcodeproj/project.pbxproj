@@ -49,14 +49,12 @@
 		122873B617CF7CCB00F36BEF /* TransactionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 122873B517CF7CCA00F36BEF /* TransactionViewCell.m */; };
 		122873B917CF7CDA00F36BEF /* XPPointsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 122873B817CF7CD900F36BEF /* XPPointsViewCell.m */; };
 		123B6B4017C3FC0100EB7138 /* BankLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 123B6B3F17C3FC0100EB7138 /* BankLogo.png */; };
-		123B6B4317C4004A00EB7138 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4117C4004A00EB7138 /* GooglePlus.framework */; };
 		123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */; };
 		123B6B4617C4005C00EB7138 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 123B6B4517C4005C00EB7138 /* GooglePlus.bundle */; };
 		123B6B4817C406F900EB7138 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4717C406F900EB7138 /* Security.framework */; };
 		123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */; };
 		123B6B5217C49C8100EB7138 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B5117C49C8100EB7138 /* Parse.framework */; };
 		123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B5B17C49D5300EB7138 /* libz.dylib */; };
-		123B6B6817C49DBD00EB7138 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6317C49D9500EB7138 /* libTestFlight.a */; };
 		123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6917C49DEA00EB7138 /* CoreData.framework */; };
 		123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6E17C49E2400EB7138 /* QuartzCore.framework */; };
 		123B6B7117C49E2B00EB7138 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7017C49E2B00EB7138 /* MobileCoreServices.framework */; };
@@ -66,7 +64,6 @@
 		123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7817C49E4500EB7138 /* Accounts.framework */; };
 		123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7A17C49E4C00EB7138 /* Social.framework */; };
 		123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7C17C49E5100EB7138 /* AdSupport.framework */; };
-		123B6B7E17C49E8400EB7138 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6C17C49E1100EB7138 /* StoreKit.framework */; };
 		123B6B8217C49EAA00EB7138 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */; };
 		123B6B8317C49EC900EB7138 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7F17C49E9B00EB7138 /* libz.1.1.3.dylib */; };
 		123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4517C4005C00EB7138 /* GooglePlus.bundle */; };
@@ -94,6 +91,9 @@
 		12DB25C317C89D6600386DF3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C217C897AC00386DF3 /* MBProgressHUD.m */; };
 		12DB25C617C8A0F300386DF3 /* ClassPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */; };
 		12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */; };
+		456B821717FFF03D00461B3F /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821617FFF03D00461B3F /* libTestFlight.a */; };
+		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821C18008F8000461B3F /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,20 +159,17 @@
 		122873B717CF7CD800F36BEF /* XPPointsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPointsViewCell.h; sourceTree = "<group>"; };
 		122873B817CF7CD900F36BEF /* XPPointsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPointsViewCell.m; sourceTree = "<group>"; };
 		123B6B3F17C3FC0100EB7138 /* BankLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BankLogo.png; sourceTree = "<group>"; };
-		123B6B4117C4004A00EB7138 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		123B6B4517C4005C00EB7138 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		123B6B4717C406F900EB7138 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		123B6B5117C49C8100EB7138 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		123B6B5B17C49D5300EB7138 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		123B6B6317C49D9500EB7138 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		123B6B6417C49D9500EB7138 /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		123B6B6517C49D9500EB7138 /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		123B6B6617C49D9500EB7138 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
 		123B6B6717C49D9500EB7138 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		123B6B6917C49DEA00EB7138 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		123B6B6C17C49E1100EB7138 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		123B6B6E17C49E2400EB7138 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		123B6B7017C49E2B00EB7138 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		123B6B7217C49E3000EB7138 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -222,6 +219,9 @@
 		12DB25C417C8A0F300386DF3 /* ClassPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPeriodViewController.h; sourceTree = "<group>"; };
 		12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPeriodViewController.m; sourceTree = "<group>"; };
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		456B821617FFF03D00461B3F /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		456B821C18008F8000461B3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,24 +234,24 @@
 				123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */,
 				123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */,
 				123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */,
-				123B6B6817C49DBD00EB7138 /* libTestFlight.a in Frameworks */,
+				456B821717FFF03D00461B3F /* libTestFlight.a in Frameworks */,
 				123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */,
 				123B6B7717C49E3D00EB7138 /* AudioToolbox.framework in Frameworks */,
 				123B6B7517C49E3800EB7138 /* CFNetwork.framework in Frameworks */,
 				123B6B7317C49E3000EB7138 /* CoreLocation.framework in Frameworks */,
 				123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */,
 				123B6B4817C406F900EB7138 /* Security.framework in Frameworks */,
+				456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */,
 				1206DA5C17BF193D004DC20D /* CoreGraphics.framework in Frameworks */,
 				1206DA5817BF193D004DC20D /* UIKit.framework in Frameworks */,
 				123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */,
 				123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */,
 				1206DA5A17BF193D004DC20D /* Foundation.framework in Frameworks */,
-				123B6B4317C4004A00EB7138 /* GooglePlus.framework in Frameworks */,
 				123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */,
 				123B6B7117C49E2B00EB7138 /* MobileCoreServices.framework in Frameworks */,
 				123B6B5217C49C8100EB7138 /* Parse.framework in Frameworks */,
-				123B6B7E17C49E8400EB7138 /* StoreKit.framework in Frameworks */,
 				123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */,
+				456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +278,8 @@
 		1206DA5617BF193D004DC20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				456B821C18008F8000461B3F /* StoreKit.framework */,
+				456B821817FFF2F400461B3F /* GooglePlus.framework */,
 				123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */,
 				123B6B7F17C49E9B00EB7138 /* libz.1.1.3.dylib */,
 				123B6B7C17C49E5100EB7138 /* AdSupport.framework */,
@@ -288,14 +290,12 @@
 				123B6B7217C49E3000EB7138 /* CoreLocation.framework */,
 				123B6B7017C49E2B00EB7138 /* MobileCoreServices.framework */,
 				123B6B6E17C49E2400EB7138 /* QuartzCore.framework */,
-				123B6B6C17C49E1100EB7138 /* StoreKit.framework */,
 				123B6B5B17C49D5300EB7138 /* libz.dylib */,
 				123B6B6917C49DEA00EB7138 /* CoreData.framework */,
 				123B6B5117C49C8100EB7138 /* Parse.framework */,
 				123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */,
 				123B6B4717C406F900EB7138 /* Security.framework */,
 				123B6B4517C4005C00EB7138 /* GooglePlus.bundle */,
-				123B6B4117C4004A00EB7138 /* GooglePlus.framework */,
 				123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */,
 				1206DA5717BF193D004DC20D /* UIKit.framework */,
 				1206DA5917BF193D004DC20D /* Foundation.framework */,
@@ -354,8 +354,8 @@
 				12DB25C217C897AC00386DF3 /* MBProgressHUD.m */,
 				123B6B8517C4B83B00EB7138 /* UIImage+RoundedImage.h */,
 				123B6B8617C4B83B00EB7138 /* UIImage+RoundedImage.m */,
-				123B6B6317C49D9500EB7138 /* libTestFlight.a */,
 				123B6B6417C49D9500EB7138 /* release_notes.md */,
+				456B821617FFF03D00461B3F /* libTestFlight.a */,
 				123B6B6517C49D9500EB7138 /* TestFlight.h */,
 				123B6B6617C49D9500EB7138 /* TestFlight+AsyncLogging.h */,
 				123B6B6717C49D9500EB7138 /* TestFlight+ManualSessions.h */,
@@ -498,6 +498,19 @@
 				CLASSPREFIX = Finance;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Blake Tsuzaki";
+				TargetAttributes = {
+					1206DA5317BF193D004DC20D = {
+						DevelopmentTeam = JP7JGNH77T;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = 1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "Finance" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -685,25 +698,30 @@
 		1206DA7817BF193E004DC20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/koluke/Documents/Iolani_EPF/Finance,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/Finance-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Finance/TestFlightSDK2\"",
-					"\"$(SRCROOT)/Finance\"",
+					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
+					"\\\"$(SRCROOT)/Finance\\\"",
+					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
-					"-force_load",
 					/Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework/GoogleOpenSource,
+					"-force_load",
+					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -711,25 +729,30 @@
 		1206DA7917BF193E004DC20D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					/Users/koluke/Documents/Iolani_EPF/Finance,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/Finance-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Finance/TestFlightSDK2\"",
-					"\"$(SRCROOT)/Finance\"",
+					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
+					"\\\"$(SRCROOT)/Finance\\\"",
+					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
-					"-force_load",
 					/Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework/GoogleOpenSource,
+					"-force_load",
+					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
