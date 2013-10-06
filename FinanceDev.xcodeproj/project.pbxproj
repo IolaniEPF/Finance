@@ -91,20 +91,20 @@
 		12DB25C317C89D6600386DF3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C217C897AC00386DF3 /* MBProgressHUD.m */; };
 		12DB25C617C8A0F300386DF3 /* ClassPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */; };
 		12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */; };
-		456B821717FFF03D00461B3F /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821617FFF03D00461B3F /* libTestFlight.a */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821C18008F8000461B3F /* StoreKit.framework */; };
+		45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B776981800F1BC00A3A0F4 /* libTestFlight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1206DA5417BF193D004DC20D /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1206DA5417BF193D004DC20D /* FinanceDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1206DA5717BF193D004DC20D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1206DA5917BF193D004DC20D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1206DA5B17BF193D004DC20D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1206DA5F17BF193D004DC20D /* Finance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finance-Info.plist"; sourceTree = "<group>"; };
+		1206DA5F17BF193D004DC20D /* FinanceDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinanceDev-Info.plist"; sourceTree = "<group>"; };
 		1206DA6117BF193D004DC20D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1206DA6317BF193D004DC20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1206DA6517BF193D004DC20D /* Finance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finance-Prefix.pch"; sourceTree = "<group>"; };
+		1206DA6517BF193D004DC20D /* FinanceDev-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinanceDev-Prefix.pch"; sourceTree = "<group>"; };
 		1206DA6617BF193D004DC20D /* FinanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceAppDelegate.h; sourceTree = "<group>"; };
 		1206DA6717BF193D004DC20D /* FinanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceAppDelegate.m; sourceTree = "<group>"; };
 		1206DA6917BF193D004DC20D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -166,9 +166,6 @@
 		123B6B5117C49C8100EB7138 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		123B6B5B17C49D5300EB7138 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		123B6B6417C49D9500EB7138 /* release_notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		123B6B6517C49D9500EB7138 /* TestFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		123B6B6617C49D9500EB7138 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		123B6B6717C49D9500EB7138 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		123B6B6917C49DEA00EB7138 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		123B6B6E17C49E2400EB7138 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		123B6B7017C49E2B00EB7138 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -219,9 +216,12 @@
 		12DB25C417C8A0F300386DF3 /* ClassPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPeriodViewController.h; sourceTree = "<group>"; };
 		12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPeriodViewController.m; sourceTree = "<group>"; };
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
-		456B821617FFF03D00461B3F /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		456B821C18008F8000461B3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		45B776981800F1BC00A3A0F4 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		45B7769A1800F1EF00A3A0F4 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		45B7769B1800F1EF00A3A0F4 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		45B7769C1800F1EF00A3A0F4 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,7 +234,7 @@
 				123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */,
 				123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */,
 				123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */,
-				456B821717FFF03D00461B3F /* libTestFlight.a in Frameworks */,
+				45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */,
 				123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */,
 				123B6B7717C49E3D00EB7138 /* AudioToolbox.framework in Frameworks */,
 				123B6B7517C49E3800EB7138 /* CFNetwork.framework in Frameworks */,
@@ -270,7 +270,7 @@
 		1206DA5517BF193D004DC20D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1206DA5417BF193D004DC20D /* Finance.app */,
+				1206DA5417BF193D004DC20D /* FinanceDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,21 +349,21 @@
 				1228735317CCB2CA00F36BEF /* 123-id-card.png */,
 				12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */,
 				1228734F17CCAEC700F36BEF /* Down.png */,
+				45B7769A1800F1EF00A3A0F4 /* TestFlight.h */,
+				45B7769B1800F1EF00A3A0F4 /* TestFlight+AsyncLogging.h */,
+				45B7769C1800F1EF00A3A0F4 /* TestFlight+ManualSessions.h */,
 				1228735017CCAEC700F36BEF /* Up.png */,
 				12DB25C117C897AC00386DF3 /* MBProgressHUD.h */,
 				12DB25C217C897AC00386DF3 /* MBProgressHUD.m */,
+				45B776981800F1BC00A3A0F4 /* libTestFlight.a */,
 				123B6B8517C4B83B00EB7138 /* UIImage+RoundedImage.h */,
 				123B6B8617C4B83B00EB7138 /* UIImage+RoundedImage.m */,
 				123B6B6417C49D9500EB7138 /* release_notes.md */,
-				456B821617FFF03D00461B3F /* libTestFlight.a */,
-				123B6B6517C49D9500EB7138 /* TestFlight.h */,
-				123B6B6617C49D9500EB7138 /* TestFlight+AsyncLogging.h */,
-				123B6B6717C49D9500EB7138 /* TestFlight+ManualSessions.h */,
 				123B6B3F17C3FC0100EB7138 /* BankLogo.png */,
-				1206DA5F17BF193D004DC20D /* Finance-Info.plist */,
+				1206DA5F17BF193D004DC20D /* FinanceDev-Info.plist */,
 				1206DA6017BF193D004DC20D /* InfoPlist.strings */,
 				1206DA6317BF193D004DC20D /* main.m */,
-				1206DA6517BF193D004DC20D /* Finance-Prefix.pch */,
+				1206DA6517BF193D004DC20D /* FinanceDev-Prefix.pch */,
 				126B471417C75E8D00E3CE12 /* Done.png */,
 				126B470517C7588500E3CE12 /* Forward.png */,
 				1206DA6917BF193D004DC20D /* Default.png */,
@@ -472,9 +472,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1206DA5317BF193D004DC20D /* Finance */ = {
+		1206DA5317BF193D004DC20D /* FinanceDev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "Finance" */;
+			buildConfigurationList = 1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "FinanceDev" */;
 			buildPhases = (
 				1206DA5017BF193D004DC20D /* Sources */,
 				1206DA5117BF193D004DC20D /* Frameworks */,
@@ -484,9 +484,9 @@
 			);
 			dependencies = (
 			);
-			name = Finance;
+			name = FinanceDev;
 			productName = Finance;
-			productReference = 1206DA5417BF193D004DC20D /* Finance.app */;
+			productReference = 1206DA5417BF193D004DC20D /* FinanceDev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -512,7 +512,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "Finance" */;
+			buildConfigurationList = 1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "FinanceDev" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -524,7 +524,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1206DA5317BF193D004DC20D /* Finance */,
+				1206DA5317BF193D004DC20D /* FinanceDev */,
 			);
 		};
 /* End PBXProject section */
@@ -706,13 +706,14 @@
 					/Users/koluke/Documents/Iolani_EPF/Finance,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
-				INFOPLIST_FILE = "Finance/Finance-Info.plist";
+				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
-					"\\\"$(SRCROOT)/Finance\\\"",
+					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
 					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
@@ -720,7 +721,7 @@
 					"-force_load",
 					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FinanceDev;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -737,13 +738,14 @@
 					/Users/koluke/Documents/Iolani_EPF/Finance,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
-				INFOPLIST_FILE = "Finance/Finance-Info.plist";
+				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
-					"\\\"$(SRCROOT)/Finance\\\"",
+					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
 					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
@@ -751,7 +753,7 @@
 					"-force_load",
 					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FinanceDev;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -760,7 +762,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "Finance" */ = {
+		1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "FinanceDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1206DA7517BF193E004DC20D /* Debug */,
@@ -769,7 +771,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "Finance" */ = {
+		1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "FinanceDev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1206DA7817BF193E004DC20D /* Debug */,

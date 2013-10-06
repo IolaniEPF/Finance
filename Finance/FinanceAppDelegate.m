@@ -31,9 +31,9 @@ static NSString * const kClientID =
     [Parse setApplicationId:@"JZBd7VGfhUOhZGQK6u7kbuWF4jCPi0EX9y0p6rGY"
                   clientKey:@"842XDuFJJqfJ6g3p1pVZdLT53EK7knfK1NawAr5d"];
     
-    //[TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    [TestFlight takeOff:@"fa6c24f8-f3ee-4be6-accc-2364fda4589c"];
+    [TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
+    //[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+    [TestFlight takeOff:@"efe5a23b-bbc3-4dc9-bcdd-d81544af3d33"];
     
     PFACL *defaultACL = [PFACL ACL];
     
