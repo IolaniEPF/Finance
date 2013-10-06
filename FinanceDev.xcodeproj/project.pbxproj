@@ -93,6 +93,8 @@
 		12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821C18008F8000461B3F /* StoreKit.framework */; };
+		4574DE40180216430005CE39 /* iOS7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE3E180216430005CE39 /* iOS7.storyboard */; };
+		4574DE4318021B3B0005CE39 /* MainStoryboardEnhanced.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboardEnhanced.storyboard */; };
 		45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B776981800F1BC00A3A0F4 /* libTestFlight.a */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +220,8 @@
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		456B821C18008F8000461B3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4574DE3F180216430005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iOS7.storyboard; sourceTree = "<group>"; };
+		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboardEnhanced.storyboard; sourceTree = "<group>"; };
 		45B776981800F1BC00A3A0F4 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		45B7769A1800F1EF00A3A0F4 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		45B7769B1800F1EF00A3A0F4 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
@@ -310,6 +314,8 @@
 				1206DA6617BF193D004DC20D /* FinanceAppDelegate.h */,
 				1206DA6717BF193D004DC20D /* FinanceAppDelegate.m */,
 				1206DA6F17BF193E004DC20D /* MainStoryboard.storyboard */,
+				4574DE3E180216430005CE39 /* iOS7.storyboard */,
+				4574DE4118021B3B0005CE39 /* MainStoryboardEnhanced.storyboard */,
 				122873B117CF72E200F36BEF /* FeedbackViewController.h */,
 				122873B217CF72E200F36BEF /* FeedbackViewController.m */,
 				1228738C17CD82E200F36BEF /* Transactions */,
@@ -549,6 +555,7 @@
 				1228735417CCB2CA00F36BEF /* 123-id-card.png in Resources */,
 				1228735817CCB4E800F36BEF /* Circle.png in Resources */,
 				1228736217CCBA2000F36BEF /* iPad.png in Resources */,
+				4574DE4318021B3B0005CE39 /* MainStoryboardEnhanced.storyboard in Resources */,
 				1228736417CCBA3200F36BEF /* iPad-Retina.png in Resources */,
 				1228736617CCBF1F00F36BEF /* 53-house.png in Resources */,
 				1228736817CCBF7100F36BEF /* 172-pricetag.png in Resources */,
@@ -564,6 +571,7 @@
 				125FD89E17D46F930056BECD /* arrow_left_24.png in Resources */,
 				125FD89F17D46F930056BECD /* arrow_right_24.png in Resources */,
 				125FD8A517D472360056BECD /* Announcements.png in Resources */,
+				4574DE40180216430005CE39 /* iOS7.storyboard in Resources */,
 				125FD8A817D472720056BECD /* Drive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +636,22 @@
 				1206DA7017BF193E004DC20D /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		4574DE3E180216430005CE39 /* iOS7.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4574DE3F180216430005CE39 /* en */,
+			);
+			name = iOS7.storyboard;
+			sourceTree = "<group>";
+		};
+		4574DE4118021B3B0005CE39 /* MainStoryboardEnhanced.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4574DE4218021B3B0005CE39 /* en */,
+			);
+			name = MainStoryboardEnhanced.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -723,6 +747,7 @@
 				);
 				PRODUCT_NAME = FinanceDev;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -755,6 +780,7 @@
 				);
 				PRODUCT_NAME = FinanceDev;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
