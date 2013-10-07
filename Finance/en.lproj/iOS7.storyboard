@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="BankLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vjc-jQ-AeR">
-                                <rect key="frame" x="156" y="201" width="162" height="176"/>
+                                <rect key="frame" x="135" y="201" width="162" height="176"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="162" id="qoo-3q-qyd"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Raider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bnx-c5-Qk9">
-                                <rect key="frame" x="326" y="217" width="286" height="76"/>
+                                <rect key="frame" x="305" y="217" width="329" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="TYs-Tq-WYH"/>
                                 </constraints>
@@ -34,8 +34,8 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bank Dev" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEe-sK-4D9">
-                                <rect key="frame" x="326" y="266" width="286" height="111"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(Dev) Bank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEe-sK-4D9">
+                                <rect key="frame" x="305" y="266" width="329" height="111"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="80"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -43,10 +43,10 @@
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGd-jL-Mg1">
-                                <rect key="frame" x="156" y="423" width="456" height="254"/>
+                                <rect key="frame" x="135" y="423" width="499" height="254"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vfB-Bj-QJZ">
-                                        <rect key="frame" x="210" y="98" width="37" height="37"/>
+                                        <rect key="frame" x="231" y="98" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -636,7 +636,7 @@
                                                 <rect key="frame" x="211" y="50" width="537" height="45"/>
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6K-UB-dv3">
-                                                <rect key="frame" x="229" y="2.9999999970084792" width="538" height="49"/>
+                                                <rect key="frame" x="229" y="2.9999999972200007" width="538" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="538" id="4Zw-eS-xAl"/>
                                                     <constraint firstAttribute="height" constant="49" id="NVu-8d-uev"/>
