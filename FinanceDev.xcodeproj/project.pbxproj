@@ -91,8 +91,9 @@
 		12DB25C317C89D6600386DF3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C217C897AC00386DF3 /* MBProgressHUD.m */; };
 		12DB25C617C8A0F300386DF3 /* ClassPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */; };
 		12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */; };
+		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821C18008F8000461B3F /* StoreKit.framework */; };
+		4572B556181C3F0D00B88020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4572B555181C3F0D00B88020 /* Images.xcassets */; };
 		4574DE40180216430005CE39 /* iOS7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE3E180216430005CE39 /* iOS7.storyboard */; };
 		4574DE4318021B3B0005CE39 /* MainStoryboardEnhanced.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboardEnhanced.storyboard */; };
 		45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B776981800F1BC00A3A0F4 /* libTestFlight.a */; };
@@ -218,8 +219,9 @@
 		12DB25C417C8A0F300386DF3 /* ClassPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPeriodViewController.h; sourceTree = "<group>"; };
 		12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPeriodViewController.m; sourceTree = "<group>"; };
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
-		456B821C18008F8000461B3F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		4572B555181C3F0D00B88020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FinanceDev/Images.xcassets; sourceTree = "<group>"; };
 		4574DE3F180216430005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iOS7.storyboard; sourceTree = "<group>"; };
 		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboardEnhanced.storyboard; sourceTree = "<group>"; };
 		45B776981800F1BC00A3A0F4 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -245,7 +247,7 @@
 				123B6B7317C49E3000EB7138 /* CoreLocation.framework in Frameworks */,
 				123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */,
 				123B6B4817C406F900EB7138 /* Security.framework in Frameworks */,
-				456B821D18008F8000461B3F /* StoreKit.framework in Frameworks */,
+				453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */,
 				1206DA5C17BF193D004DC20D /* CoreGraphics.framework in Frameworks */,
 				1206DA5817BF193D004DC20D /* UIKit.framework in Frameworks */,
 				123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */,
@@ -265,6 +267,7 @@
 		1206DA4B17BF193D004DC20D = {
 			isa = PBXGroup;
 			children = (
+				4572B555181C3F0D00B88020 /* Images.xcassets */,
 				1206DA5D17BF193D004DC20D /* Finance */,
 				1206DA5617BF193D004DC20D /* Frameworks */,
 				1206DA5517BF193D004DC20D /* Products */,
@@ -282,7 +285,7 @@
 		1206DA5617BF193D004DC20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				456B821C18008F8000461B3F /* StoreKit.framework */,
+				453538A7181B8CB900C4C677 /* StoreKit.framework */,
 				456B821817FFF2F400461B3F /* GooglePlus.framework */,
 				123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */,
 				123B6B7F17C49E9B00EB7138 /* libz.1.1.3.dylib */,
@@ -503,7 +506,7 @@
 			attributes = {
 				CLASSPREFIX = Finance;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Blake Tsuzaki";
+				ORGANIZATIONNAME = "'Iolani School";
 				TargetAttributes = {
 					1206DA5317BF193D004DC20D = {
 						DevelopmentTeam = JP7JGNH77T;
@@ -551,6 +554,7 @@
 				126B471517C75E8D00E3CE12 /* Done.png in Resources */,
 				12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */,
 				1228735117CCAEC700F36BEF /* Down.png in Resources */,
+				4572B556181C3F0D00B88020 /* Images.xcassets in Resources */,
 				1228735217CCAEC700F36BEF /* Up.png in Resources */,
 				1228735417CCB2CA00F36BEF /* 123-id-card.png in Resources */,
 				1228735817CCB4E800F36BEF /* Circle.png in Resources */,

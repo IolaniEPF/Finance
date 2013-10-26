@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment version="1792" defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Finance View Controller-->
@@ -636,7 +636,7 @@
                                                 <rect key="frame" x="211" y="50" width="537" height="45"/>
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6K-UB-dv3">
-                                                <rect key="frame" x="229" y="2.9999999972200007" width="538" height="49"/>
+                                                <rect key="frame" x="229" y="3" width="538" height="49"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="538" id="4Zw-eS-xAl"/>
                                                     <constraint firstAttribute="height" constant="49" id="NVu-8d-uev"/>
@@ -2092,14 +2092,10 @@
         <image name="BankLogo.png" width="156" height="176"/>
         <image name="Circle.png" width="170" height="170"/>
         <image name="Done.png" width="100" height="100"/>
-        <image name="Done.png" width="100" height="100"/>
-        <image name="Done.png" width="100" height="100"/>
-        <image name="Done.png" width="100" height="100"/>
         <image name="Down.png" width="50" height="51"/>
         <image name="Drive.png" width="120" height="30"/>
         <image name="Forward.png" width="100" height="100"/>
         <image name="NewBadge.png" width="50" height="51"/>
-        <image name="Plus.png" width="75" height="80"/>
         <image name="Plus.png" width="75" height="80"/>
         <image name="Refresh.png" width="50" height="51"/>
         <image name="arrow_circle_left_24.png" width="24" height="24"/>

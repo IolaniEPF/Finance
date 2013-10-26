@@ -351,7 +351,7 @@ static CGPathRef CGPathCreateArc(CGPoint center, CGFloat radius, CGFloat startAn
                 }
                 else if(diff < 0)
                 {
-                    while(diff < 0) 
+                    while(diff < 0)
                     {
                         [onelayer removeFromSuperlayer];
                         [parentLayer addSublayer:onelayer];
