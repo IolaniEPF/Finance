@@ -46,7 +46,7 @@
         [nonStudentQuery whereKey:@"isStudent" equalTo:@NO];
         NSArray *nonStudents = [nonStudentQuery findObjects];
         //fetch all nonstudent objects
-        
+        NSArray *queries = [NSArray new];
         for (NSUInteger x = 0; x < [nonStudents count]; x++) {
             //query for transactions
             if ([PFUser currentUser] != nonStudents[x]) {
@@ -55,11 +55,13 @@
                 [query1 whereKey:@"Sender" equalTo:[nonStudents objectAtIndex:x]];
                 PFQuery *query2 = [PFQuery queryWithClassName:@"Transactions"];
                 [query2 whereKey:@"Recipient" equalTo:[nonStudents objectAtIndex:x]];
-                //allTrans = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:allTrans,query1,query2, nil]];
+                queries = [queries arrayByAddingObject:query1];
+                queries = [queries arrayByAddingObject:query2];
                 //combine all into array then insert as subquery, otherwise will throw array in array-type exception
+                
             }
         }
-        
+        allTrans = [PFQuery orQueryWithSubqueries:queries];
     }
     else    {
     
