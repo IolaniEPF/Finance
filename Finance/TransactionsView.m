@@ -25,15 +25,53 @@
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
+    //PFQuery *nonStudent = [PFUser query];
+    //[nonStudent whereKey:@"isStudent" equalTo:@NO];
+    
+    
+    //Define user object representations for Iolani Bank and Mom and Dad accounts
+    
     PFQuery *senderQuery = [PFQuery queryWithClassName:@"Transactions"];
     [senderQuery whereKey:@"Sender" equalTo:[PFUser currentUser]];
     PFQuery *recipientQuery = [PFQuery queryWithClassName:@"Transactions"];
     [recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
-    PFQuery *query = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
-    [query orderByDescending:@"createdAt"];
+    
+    PFQuery *allTrans = [PFQuery orQueryWithSubqueries:nil];
+    
+    
+    if ([[[PFUser currentUser] objectForKey: @"Superuser"] isEqual: @YES]) {
+        
+        //query for transactions made to/from Iolani Bank and Mom and Dad accounts
+        PFQuery *nonStudentQuery = [PFUser query];
+        [nonStudentQuery whereKey:@"isStudent" equalTo:@NO];
+        NSArray *nonStudents = [nonStudentQuery findObjects];
+        //fetch all nonstudent objects
+        
+        for (NSUInteger x = 0; x < [nonStudents count]; x++) {
+            //query for transactions
+            if ([PFUser currentUser] != nonStudents[x]) {
+            //ensure current user isn't part of nonstudent query to prevent double listing
+                PFQuery *query1 = [PFQuery queryWithClassName:@"Transactions"];
+                [query1 whereKey:@"Sender" equalTo:[nonStudents objectAtIndex:x]];
+                PFQuery *query2 = [PFQuery queryWithClassName:@"Transactions"];
+                [query2 whereKey:@"Recipient" equalTo:[nonStudents objectAtIndex:x]];
+                //allTrans = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:allTrans,query1,query2, nil]];
+                //combine all into array then insert as subquery, otherwise will throw array in array-type exception
+            }
+        }
+        
+    }
+    else    {
+    
+        allTrans = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
+    }
+    //PFQuery *query = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
+    //[query orderByDescending:@"createdAt"];
+    
+    [allTrans orderByDescending:@"createdAt"];
     
     NSError *error = nil;
-    self.transactionArray = [query findObjects:&error];
+    self.transactionArray = [allTrans /*query*/ findObjects:&error];
     if(error){
         NSString *errorString = [error localizedDescription];
         UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"

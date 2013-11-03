@@ -49,8 +49,8 @@
                                                         delegate:nil
                                                cancelButtonTitle:@"OK"
                                                otherButtonTitles:nil];
-    self.feedbackText.text = @"Tap here to type";
     [errorAlert show];
+    self.feedbackText.text = @"Tap here to type";
     [errorAlert release];
 }
 @end

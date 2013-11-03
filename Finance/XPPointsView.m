@@ -27,9 +27,16 @@
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     PFQuery *recipientQuery = [PFQuery queryWithClassName:@"XPTransactions"];
-    [recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
-    [recipientQuery orderByDescending:@"createdAt"];
+    if (!([[[PFUser currentUser] objectForKey:(@"Superuser")] isEqual:@YES]))   {
+        [recipientQuery whereKey: @"Recipient" equalTo:[PFUser currentUser]];
+        //if current user is not a superuser, do not constrain query, pull all XPTransactions for display
+    }
+    else    {
+        //[recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
+        //else if superuser do not place constraints
+    }
     
+    [recipientQuery orderByDescending:@"createdAt"];
     NSError *error = nil;
     self.transactionArray = [recipientQuery findObjects:&error];
     if(error){
@@ -59,6 +66,19 @@
     }
     cell.amountLabel.text = [NSString stringWithFormat:@"%@ pts",[[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Amount"]];
     cell.bigLabel.text = [[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Description"];
+    
+    //insert code for showing recipient (if superuser)
+    //WARNING: CODE IN THIS AREA IS HIGHLY EXPERIMENTAL!!!!!
+    
+    if ([[[PFUser currentUser] objectForKey: @"Superuser"] isEqual: @YES]) {
+        //display XP points recipient
+        //cell.amountLabel.text = cell.amountLabel.text;
+        //Append recipient to end of string
+
+    }
+    
+    //END OF EXPERIMENTAL CODE ZONE
+    
     return cell;
 }
 
