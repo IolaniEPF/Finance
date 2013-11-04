@@ -984,7 +984,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-3I-XzD">
-                                <rect key="frame" x="11" y="936" width="75" height="80"/>
+                                <rect key="frame" x="11" y="889" width="75" height="80"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Plus.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -998,7 +998,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLo-ie-wag">
-                                <rect key="frame" x="681" y="936" width="75" height="80"/>
+                                <rect key="frame" x="681" y="889" width="75" height="80"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="Plus.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1012,7 +1012,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsK-EB-MVT">
-                                <rect key="frame" x="693" y="848" width="75" height="80"/>
+                                <rect key="frame" x="693" y="801" width="75" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="9XJ-eN-BhB"/>
                                     <constraint firstAttribute="height" constant="80" id="VyP-sY-4hc"/>
@@ -1051,7 +1051,7 @@
                         <color key="backgroundColor" red="0.0" green="0.21123289279999999" blue="0.35239045520000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="nLo-ie-wag" secondAttribute="trailing" constant="12" id="0Ad-oz-yg6"/>
-                            <constraint firstAttribute="bottom" secondItem="Boc-3I-XzD" secondAttribute="bottom" constant="8" id="53H-Ts-8L7"/>
+                            <constraint firstAttribute="bottom" secondItem="Boc-3I-XzD" secondAttribute="bottom" constant="55" id="53H-Ts-8L7"/>
                             <constraint firstItem="p41-qW-j2m" firstAttribute="leading" secondItem="06P-dZ-AS0" secondAttribute="leading" constant="20" symbolic="YES" id="7TB-GS-0MQ"/>
                             <constraint firstAttribute="trailing" secondItem="QTA-vL-fgS" secondAttribute="trailing" constant="20" symbolic="YES" id="8l2-5h-Wue"/>
                             <constraint firstItem="cxH-5O-idE" firstAttribute="leading" secondItem="p41-qW-j2m" secondAttribute="trailing" constant="8" symbolic="YES" id="Bw9-Ka-uOb"/>
