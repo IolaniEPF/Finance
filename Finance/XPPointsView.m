@@ -28,12 +28,13 @@
     
     PFQuery *recipientQuery = [PFQuery queryWithClassName:@"XPTransactions"];
     if (!([[[PFUser currentUser] objectForKey:(@"Superuser")] isEqual:@YES]))   {
+        
         [recipientQuery whereKey: @"Recipient" equalTo:[PFUser currentUser]];
-        //if current user is not a superuser, do not constrain query, pull all XPTransactions for display
+        //if current user is not a superuser, constrain query to current user's XP transactions
     }
     else    {
-        //[recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
         //else if superuser do not place constraints
+        
     }
     
     [recipientQuery orderByDescending:@"createdAt"];
@@ -64,20 +65,16 @@
     }else{
         cell.amountLabel.textColor = [UIColor greenColor];
     }
-    cell.amountLabel.text = [NSString stringWithFormat:@"%@ pts",[[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Amount"]];
-    cell.bigLabel.text = [[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Description"];
     
-    //insert code for showing recipient (if superuser)
-    //WARNING: CODE IN THIS AREA IS HIGHLY EXPERIMENTAL!!!!!
-    
-    if ([[[PFUser currentUser] objectForKey: @"Superuser"] isEqual: @YES]) {
-        //display XP points recipient
-        //cell.amountLabel.text = cell.amountLabel.text;
-        //Append recipient to end of string
-
+    if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+        cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+        //add recipient to end of string if superuser
     }
-    
-    //END OF EXPERIMENTAL CODE ZONE
+    else    {
+        cell.bigLabel.text = [[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Description"];
+    }
+
+    cell.amountLabel.text = [NSString stringWithFormat:@"%@ pts",[[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Amount"]];
     
     return cell;
 }

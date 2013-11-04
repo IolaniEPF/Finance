@@ -99,12 +99,27 @@
         if([[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"] isEqualToString:[[PFUser currentUser] objectForKey:@"AvatarName"]]){
             amountString = [NSString stringWithFormat:@"- $%@",amountNum];
             cell.amountLabel.textColor = [UIColor redColor];
-            cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+            if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+                //show sender string as well
+                
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@ to %@" ,[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+                
+            }
+            else    {
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+            }
         }
         else{
             amountString = [NSString stringWithFormat:@"+ $%@",amountNum];
             cell.amountLabel.textColor = [UIColor greenColor];
-            cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            
+            if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+                //show other string
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@ from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            }
+            else    {
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            }
         }
         
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
