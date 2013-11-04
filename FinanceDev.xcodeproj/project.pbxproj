@@ -94,7 +94,7 @@
 		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4574DE4318021B3B0005CE39 /* MainStoryboardEnhanced.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboardEnhanced.storyboard */; };
-		45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B776981800F1BC00A3A0F4 /* libTestFlight.a */; };
+		45DFCD4A182779B80093F563 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45DFCD46182779B80093F563 /* libTestFlight.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -220,10 +220,10 @@
 		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboardEnhanced.storyboard; sourceTree = "<group>"; };
-		45B776981800F1BC00A3A0F4 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		45B7769A1800F1EF00A3A0F4 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		45B7769B1800F1EF00A3A0F4 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		45B7769C1800F1EF00A3A0F4 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		45DFCD46182779B80093F563 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		45DFCD47182779B80093F563 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		45DFCD48182779B80093F563 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		45DFCD49182779B80093F563 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +236,7 @@
 				123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */,
 				123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */,
 				123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */,
-				45B776991800F1BC00A3A0F4 /* libTestFlight.a in Frameworks */,
+				45DFCD4A182779B80093F563 /* libTestFlight.a in Frameworks */,
 				123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */,
 				123B6B7717C49E3D00EB7138 /* AudioToolbox.framework in Frameworks */,
 				123B6B7517C49E3800EB7138 /* CFNetwork.framework in Frameworks */,
@@ -352,13 +352,13 @@
 				1228735317CCB2CA00F36BEF /* 123-id-card.png */,
 				12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */,
 				1228734F17CCAEC700F36BEF /* Down.png */,
-				45B7769A1800F1EF00A3A0F4 /* TestFlight.h */,
-				45B7769B1800F1EF00A3A0F4 /* TestFlight+AsyncLogging.h */,
-				45B7769C1800F1EF00A3A0F4 /* TestFlight+ManualSessions.h */,
 				1228735017CCAEC700F36BEF /* Up.png */,
+				45DFCD46182779B80093F563 /* libTestFlight.a */,
+				45DFCD47182779B80093F563 /* TestFlight.h */,
+				45DFCD48182779B80093F563 /* TestFlight+AsyncLogging.h */,
+				45DFCD49182779B80093F563 /* TestFlight+ManualSessions.h */,
 				12DB25C117C897AC00386DF3 /* MBProgressHUD.h */,
 				12DB25C217C897AC00386DF3 /* MBProgressHUD.m */,
-				45B776981800F1BC00A3A0F4 /* libTestFlight.a */,
 				123B6B8517C4B83B00EB7138 /* UIImage+RoundedImage.h */,
 				123B6B8617C4B83B00EB7138 /* UIImage+RoundedImage.m */,
 				123B6B6417C49D9500EB7138 /* release_notes.md */,
