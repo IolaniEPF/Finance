@@ -30,12 +30,10 @@ static NSString * const kClientID =
     
     [Parse setApplicationId:@"JZBd7VGfhUOhZGQK6u7kbuWF4jCPi0EX9y0p6rGY"
                   clientKey:@"842XDuFJJqfJ6g3p1pVZdLT53EK7knfK1NawAr5d"];
-    
-    //[TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-    //[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    //Removed due to deprecated UDID API and improved device and tester identification starting in TestFlight SDK v2.2.0 beta
+    //Parse app ID for use with Finance DB
     
     [TestFlight takeOff:@"efe5a23b-bbc3-4dc9-bcdd-d81544af3d33"];
+    //take off for TestFlight to log feedback and crash info, etc.
     
     PFACL *defaultACL = [PFACL ACL];
     
@@ -52,6 +50,7 @@ static NSString * const kClientID =
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+    //need to eventually fix push notifications...
     // Register for push notifications
         [application registerForRemoteNotificationTypes:
          UIRemoteNotificationTypeBadge |
