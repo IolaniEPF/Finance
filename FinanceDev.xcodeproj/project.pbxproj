@@ -52,7 +52,6 @@
 		123B6B4617C4005C00EB7138 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 123B6B4517C4005C00EB7138 /* GooglePlus.bundle */; };
 		123B6B4817C406F900EB7138 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4717C406F900EB7138 /* Security.framework */; };
 		123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */; };
-		123B6B5217C49C8100EB7138 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B5117C49C8100EB7138 /* Parse.framework */; };
 		123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B5B17C49D5300EB7138 /* libz.dylib */; };
 		123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6917C49DEA00EB7138 /* CoreData.framework */; };
 		123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B6E17C49E2400EB7138 /* QuartzCore.framework */; };
@@ -91,6 +90,7 @@
 		12DB25C617C8A0F300386DF3 /* ClassPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */; };
 		12DB25C817C8A3C900386DF3 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */; };
 		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
+		453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E8B001893209B00E5F9F4 /* Parse.framework */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		456E4F58182B1D6C0050CAC4 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E4F5A182B1D6C0050CAC4 /* iPhone.storyboard */; };
 		4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboard.storyboard */; };
@@ -164,7 +164,6 @@
 		123B6B4517C4005C00EB7138 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		123B6B4717C406F900EB7138 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		123B6B5117C49C8100EB7138 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		123B6B5B17C49D5300EB7138 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		123B6B6917C49DEA00EB7138 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		123B6B6E17C49E2400EB7138 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -217,6 +216,7 @@
 		12DB25C517C8A0F300386DF3 /* ClassPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPeriodViewController.m; sourceTree = "<group>"; };
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		453E8B001893209B00E5F9F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		456E4F59182B1D6C0050CAC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -248,11 +248,11 @@
 				1206DA5C17BF193D004DC20D /* CoreGraphics.framework in Frameworks */,
 				1206DA5817BF193D004DC20D /* UIKit.framework in Frameworks */,
 				123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */,
+				453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */,
 				123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */,
 				1206DA5A17BF193D004DC20D /* Foundation.framework in Frameworks */,
 				123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */,
 				123B6B7117C49E2B00EB7138 /* MobileCoreServices.framework in Frameworks */,
-				123B6B5217C49C8100EB7138 /* Parse.framework in Frameworks */,
 				123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */,
 				456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */,
 			);
@@ -281,6 +281,7 @@
 		1206DA5617BF193D004DC20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				453E8B001893209B00E5F9F4 /* Parse.framework */,
 				453538A7181B8CB900C4C677 /* StoreKit.framework */,
 				456B821817FFF2F400461B3F /* GooglePlus.framework */,
 				123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */,
@@ -295,7 +296,6 @@
 				123B6B6E17C49E2400EB7138 /* QuartzCore.framework */,
 				123B6B5B17C49D5300EB7138 /* libz.dylib */,
 				123B6B6917C49DEA00EB7138 /* CoreData.framework */,
-				123B6B5117C49C8100EB7138 /* Parse.framework */,
 				123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */,
 				123B6B4717C406F900EB7138 /* Security.framework */,
 				123B6B4517C4005C00EB7138 /* GooglePlus.bundle */,
@@ -720,6 +720,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/koluke/Documents/Iolani_EPF/Finance,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
@@ -754,6 +755,7 @@
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/koluke/Documents/Iolani_EPF/Finance,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
