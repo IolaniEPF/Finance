@@ -674,9 +674,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "251D8C9C-FAF0-4D41-9083-AAD25FE41E70";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "251D8C9C-FAF0-4D41-9083-AAD25FE41E70";
+				PROVISIONING_PROFILE = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -703,9 +704,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "251D8C9C-FAF0-4D41-9083-AAD25FE41E70";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "251D8C9C-FAF0-4D41-9083-AAD25FE41E70";
+				PROVISIONING_PROFILE = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -781,6 +783,71 @@
 			};
 			name = Release;
 		};
+		45862C7C1893A25700D87467 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "26A333B8-BB56-4FF7-A113-8468242EF8C6";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = TestFlight;
+		};
+		45862C7D1893A25700D87467 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					/Users/koluke/Documents/Iolani_EPF/Finance,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
+					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					/Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework/GoogleOpenSource,
+					"-force_load",
+					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
+				);
+				PRODUCT_NAME = FinanceDev;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = TestFlight;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -789,6 +856,7 @@
 			buildConfigurations = (
 				1206DA7517BF193E004DC20D /* Debug */,
 				1206DA7617BF193E004DC20D /* Release */,
+				45862C7C1893A25700D87467 /* TestFlight */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -798,6 +866,7 @@
 			buildConfigurations = (
 				1206DA7817BF193E004DC20D /* Debug */,
 				1206DA7917BF193E004DC20D /* Release */,
+				45862C7D1893A25700D87467 /* TestFlight */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
