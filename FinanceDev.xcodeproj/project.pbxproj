@@ -94,8 +94,13 @@
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		456E4F58182B1D6C0050CAC4 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E4F5A182B1D6C0050CAC4 /* iPhone.storyboard */; };
 		4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboard.storyboard */; };
-		45C48A8F18850195002E3F99 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C48A8A18850195002E3F99 /* libTestFlight.a */; };
-		45C48A9018850195002E3F99 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 45C48A8B18850195002E3F99 /* release_notes.md */; };
+		458FE35818C18594009EC308 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE35318C18594009EC308 /* libTestFlight.a */; };
+		458FE35918C18594009EC308 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 458FE35418C18594009EC308 /* release_notes.md */; };
+		458FE35B18C1874C009EC308 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE35A18C1874C009EC308 /* AddressBook.framework */; };
+		458FE35D18C18761009EC308 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE35C18C18761009EC308 /* AssetsLibrary.framework */; };
+		458FE35F18C18782009EC308 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE35E18C18782009EC308 /* CoreMotion.framework */; };
+		458FE36118C1879A009EC308 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE36018C18799009EC308 /* CoreText.framework */; };
+		458FE36318C187A3009EC308 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE36218C187A3009EC308 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,7 +165,7 @@
 		122873B717CF7CD800F36BEF /* XPPointsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPointsViewCell.h; sourceTree = "<group>"; };
 		122873B817CF7CD900F36BEF /* XPPointsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPointsViewCell.m; sourceTree = "<group>"; };
 		123B6B3F17C3FC0100EB7138 /* BankLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BankLogo.png; sourceTree = "<group>"; };
-		123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = /Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework; sourceTree = "<absolute>"; };
 		123B6B4517C4005C00EB7138 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		123B6B4717C406F900EB7138 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -217,14 +222,19 @@
 		12DB25C717C8A3C900386DF3 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		453E8B001893209B00E5F9F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = /Users/blaketsuzaki/Development/Finance/GooglePlus.framework; sourceTree = "<absolute>"; };
 		456E4F59182B1D6C0050CAC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		45C48A8A18850195002E3F99 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		45C48A8B18850195002E3F99 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
-		45C48A8C18850195002E3F99 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		45C48A8D18850195002E3F99 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		45C48A8E18850195002E3F99 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		458FE35318C18594009EC308 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = ../libTestFlight.a; sourceTree = "<group>"; };
+		458FE35418C18594009EC308 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = release_notes.md; path = ../release_notes.md; sourceTree = "<group>"; };
+		458FE35518C18594009EC308 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = ../TestFlight.h; sourceTree = "<group>"; };
+		458FE35618C18594009EC308 /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+AsyncLogging.h"; path = "../TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		458FE35718C18594009EC308 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestFlight+ManualSessions.h"; path = "../TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
+		458FE35A18C1874C009EC308 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		458FE35C18C18761009EC308 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		458FE35E18C18782009EC308 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		458FE36018C18799009EC308 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		458FE36218C187A3009EC308 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,25 +242,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1206DA5817BF193D004DC20D /* UIKit.framework in Frameworks */,
+				458FE36318C187A3009EC308 /* MediaPlayer.framework in Frameworks */,
+				458FE36118C1879A009EC308 /* CoreText.framework in Frameworks */,
+				1206DA5C17BF193D004DC20D /* CoreGraphics.framework in Frameworks */,
+				458FE35F18C18782009EC308 /* CoreMotion.framework in Frameworks */,
+				123B6B7317C49E3000EB7138 /* CoreLocation.framework in Frameworks */,
+				1206DA5A17BF193D004DC20D /* Foundation.framework in Frameworks */,
+				458FE35D18C18761009EC308 /* AssetsLibrary.framework in Frameworks */,
+				458FE35B18C1874C009EC308 /* AddressBook.framework in Frameworks */,
 				123B6B8217C49EAA00EB7138 /* libsqlite3.dylib in Frameworks */,
 				123B6B8317C49EC900EB7138 /* libz.1.1.3.dylib in Frameworks */,
 				123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */,
 				123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */,
 				123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */,
-				45C48A8F18850195002E3F99 /* libTestFlight.a in Frameworks */,
+				458FE35818C18594009EC308 /* libTestFlight.a in Frameworks */,
 				123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */,
 				123B6B7717C49E3D00EB7138 /* AudioToolbox.framework in Frameworks */,
 				123B6B7517C49E3800EB7138 /* CFNetwork.framework in Frameworks */,
-				123B6B7317C49E3000EB7138 /* CoreLocation.framework in Frameworks */,
 				123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */,
 				123B6B4817C406F900EB7138 /* Security.framework in Frameworks */,
 				453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */,
-				1206DA5C17BF193D004DC20D /* CoreGraphics.framework in Frameworks */,
-				1206DA5817BF193D004DC20D /* UIKit.framework in Frameworks */,
 				123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */,
 				453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */,
 				123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */,
-				1206DA5A17BF193D004DC20D /* Foundation.framework in Frameworks */,
 				123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */,
 				123B6B7117C49E2B00EB7138 /* MobileCoreServices.framework in Frameworks */,
 				123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */,
@@ -281,6 +296,11 @@
 		1206DA5617BF193D004DC20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				458FE36218C187A3009EC308 /* MediaPlayer.framework */,
+				458FE36018C18799009EC308 /* CoreText.framework */,
+				458FE35E18C18782009EC308 /* CoreMotion.framework */,
+				458FE35C18C18761009EC308 /* AssetsLibrary.framework */,
+				458FE35A18C1874C009EC308 /* AddressBook.framework */,
 				453E8B001893209B00E5F9F4 /* Parse.framework */,
 				453538A7181B8CB900C4C677 /* StoreKit.framework */,
 				456B821817FFF2F400461B3F /* GooglePlus.framework */,
@@ -329,11 +349,11 @@
 		1206DA5E17BF193D004DC20D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				45C48A8A18850195002E3F99 /* libTestFlight.a */,
-				45C48A8B18850195002E3F99 /* release_notes.md */,
-				45C48A8C18850195002E3F99 /* TestFlight.h */,
-				45C48A8D18850195002E3F99 /* TestFlight+AsyncLogging.h */,
-				45C48A8E18850195002E3F99 /* TestFlight+ManualSessions.h */,
+				458FE35318C18594009EC308 /* libTestFlight.a */,
+				458FE35418C18594009EC308 /* release_notes.md */,
+				458FE35518C18594009EC308 /* TestFlight.h */,
+				458FE35618C18594009EC308 /* TestFlight+AsyncLogging.h */,
+				458FE35718C18594009EC308 /* TestFlight+ManualSessions.h */,
 				125FD8A317D472360056BECD /* Announcements.png */,
 				125FD8A717D472720056BECD /* Drive.png */,
 				125FD89917D46F930056BECD /* arrow_circle_left_24.png */,
@@ -553,7 +573,7 @@
 				1228735417CCB2CA00F36BEF /* 123-id-card.png in Resources */,
 				1228735817CCB4E800F36BEF /* Circle.png in Resources */,
 				1228736217CCBA2000F36BEF /* iPad.png in Resources */,
-				45C48A9018850195002E3F99 /* release_notes.md in Resources */,
+				458FE35918C18594009EC308 /* release_notes.md in Resources */,
 				4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */,
 				1228736417CCBA3200F36BEF /* iPad-Retina.png in Resources */,
 				1228736617CCBF1F00F36BEF /* 53-house.png in Resources */,
@@ -658,8 +678,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -694,8 +714,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -716,13 +736,14 @@
 		1206DA7817BF193E004DC20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/koluke/Documents/Iolani_EPF/Finance,
 					"$(PROJECT_DIR)",
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
@@ -730,10 +751,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
-					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance\\\\\\\\\\\\\\\"",
 					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
 					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
@@ -751,13 +773,14 @@
 		1206DA7917BF193E004DC20D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/koluke/Documents/Iolani_EPF/Finance,
 					"$(PROJECT_DIR)",
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
@@ -765,10 +788,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
-					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance\\\\\\\\\\\\\\\"",
 					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
 					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
@@ -794,8 +818,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -816,13 +840,14 @@
 		45862C7D1893A25700D87467 /* TestFlight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Iolani School";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Iolani School";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
 					/Users/koluke/Documents/Iolani_EPF/Finance,
 					"$(PROJECT_DIR)",
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
@@ -830,10 +855,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\"",
-					"\\\\\\\"$(SRCROOT)/Finance\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\\\\\\\\\"",
+					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance\\\\\\\\\\\\\\\"",
 					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
 					/Users/koluke/Documents/Iolani_EPF/FinanceDev/Finance,
+					/Users/koluke/Documents/Iolani_EPF/FinanceDev,
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",

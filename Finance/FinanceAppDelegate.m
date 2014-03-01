@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 #import "FinanceAppDelegate.h"
 #import <GooglePlus/GooglePlus.h>
+#import <AddressBook/AddressBook.h>
 
 @implementation FinanceAppDelegate
 
