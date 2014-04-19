@@ -43,6 +43,7 @@ MBProgressHUD *HUD;
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     PFQuery *userQuery = [PFUser query];
+    [userQuery orderByAscending:@"username"];
     if([[[NSUserDefaults standardUserDefaults] objectForKey:@"transactionType"] isEqual:@"Deposit"]&&[[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@NO]){
         [userQuery whereKey:@"isStudent" equalTo:@NO];
     }

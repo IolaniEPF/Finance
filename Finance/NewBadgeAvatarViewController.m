@@ -41,6 +41,7 @@ MBProgressHUD *HUD;
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     PFQuery *userQuery = [PFUser query];
+    [userQuery orderByAscending:@"username"];
     NSError *error = nil;
     self.users = [userQuery findObjects:&error];
     if(error){

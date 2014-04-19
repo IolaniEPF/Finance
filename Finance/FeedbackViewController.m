@@ -27,7 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.feedbackText.delegate = self;
+    [self.feedbackText setAlpha:0.5];
 	// Do any additional setup after loading the view.
+}
+
+- (void)textViewDidBeginEditing:(UITextView *)textView{
+    [textView setAlpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +56,7 @@
                                                cancelButtonTitle:@"OK"
                                                otherButtonTitles:nil];
     [errorAlert show];
+    self.feedbackText.text = @"Tap here to type";
     [errorAlert release];
 }
 @end

@@ -9,11 +9,12 @@
 #import <Parse/Parse.h>
 #import "FinanceAppDelegate.h"
 #import <GooglePlus/GooglePlus.h>
+#import <AddressBook/AddressBook.h>
 
 @implementation FinanceAppDelegate
 
 static NSString * const kClientID =
-@"1018032390737.apps.googleusercontent.com";
+@"800860225898-v0cbku19ojugg8aulvpjl4ve4o55pvrv.apps.googleusercontent.com";
 
 - (void)dealloc
 {
@@ -30,10 +31,10 @@ static NSString * const kClientID =
     
     [Parse setApplicationId:@"JZBd7VGfhUOhZGQK6u7kbuWF4jCPi0EX9y0p6rGY"
                   clientKey:@"842XDuFJJqfJ6g3p1pVZdLT53EK7knfK1NawAr5d"];
+    //Parse app ID for use with Finance DB
     
-    //[TestFlight setDeviceIdentifier: [[[UIDevice currentDevice] identifierForVendor] UUIDString]];
-    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
-    [TestFlight takeOff:@"fa6c24f8-f3ee-4be6-accc-2364fda4589c"];
+    [TestFlight takeOff:@"efe5a23b-bbc3-4dc9-bcdd-d81544af3d33"];
+    //take off for TestFlight to log feedback and crash info, etc.
     
     PFACL *defaultACL = [PFACL ACL];
     
@@ -50,6 +51,7 @@ static NSString * const kClientID =
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
 
+    //need to eventually fix push notifications...
     // Register for push notifications
         [application registerForRemoteNotificationTypes:
          UIRemoteNotificationTypeBadge |

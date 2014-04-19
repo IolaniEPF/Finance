@@ -25,15 +25,55 @@
 
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
+    //PFQuery *nonStudent = [PFUser query];
+    //[nonStudent whereKey:@"isStudent" equalTo:@NO];
+    
+    
+    //Define user object representations for Iolani Bank and Mom and Dad accounts
+    
     PFQuery *senderQuery = [PFQuery queryWithClassName:@"Transactions"];
     [senderQuery whereKey:@"Sender" equalTo:[PFUser currentUser]];
     PFQuery *recipientQuery = [PFQuery queryWithClassName:@"Transactions"];
     [recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
-    PFQuery *query = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
-    [query orderByDescending:@"createdAt"];
+    
+    PFQuery *allTrans = [PFQuery orQueryWithSubqueries:nil];
+    
+    
+    if ([[[PFUser currentUser] objectForKey: @"Superuser"] isEqual: @YES]) {
+        
+        //query for transactions made to/from Iolani Bank and Mom and Dad accounts
+        PFQuery *nonStudentQuery = [PFUser query];
+        [nonStudentQuery whereKey:@"isStudent" equalTo:@NO];
+        NSArray *nonStudents = [nonStudentQuery findObjects];
+        //fetch all nonstudent objects
+        NSArray *queries = [NSArray new];
+        for (NSUInteger x = 0; x < [nonStudents count]; x++) {
+            //query for transactions
+            if ([PFUser currentUser] != nonStudents[x]) {
+            //ensure current user isn't part of nonstudent query to prevent double listing
+                PFQuery *query1 = [PFQuery queryWithClassName:@"Transactions"];
+                [query1 whereKey:@"Sender" equalTo:[nonStudents objectAtIndex:x]];
+                PFQuery *query2 = [PFQuery queryWithClassName:@"Transactions"];
+                [query2 whereKey:@"Recipient" equalTo:[nonStudents objectAtIndex:x]];
+                queries = [queries arrayByAddingObject:query1];
+                queries = [queries arrayByAddingObject:query2];
+                //combine all into array then insert as subquery, otherwise will throw array in array-type exception
+                
+            }
+        }
+        allTrans = [PFQuery orQueryWithSubqueries:queries];
+    }
+    else    {
+    
+        allTrans = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
+    }
+    //PFQuery *query = [PFQuery orQueryWithSubqueries:[NSArray arrayWithObjects:senderQuery,recipientQuery, nil]];
+    //[query orderByDescending:@"createdAt"];
+    
+    [allTrans orderByDescending:@"createdAt"];
     
     NSError *error = nil;
-    self.transactionArray = [query findObjects:&error];
+    self.transactionArray = [allTrans /*query*/ findObjects:&error];
     if(error){
         NSString *errorString = [error localizedDescription];
         UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -59,12 +99,27 @@
         if([[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"] isEqualToString:[[PFUser currentUser] objectForKey:@"AvatarName"]]){
             amountString = [NSString stringWithFormat:@"- $%@",amountNum];
             cell.amountLabel.textColor = [UIColor redColor];
-            cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+            if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+                //show sender string as well
+                
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@ to %@" ,[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+                
+            }
+            else    {
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+            }
         }
         else{
             amountString = [NSString stringWithFormat:@"+ $%@",amountNum];
             cell.amountLabel.textColor = [UIColor greenColor];
-            cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            
+            if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+                //show other string
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@ from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            }
+            else    {
+                cell.bigLabel.text = [NSString stringWithFormat:@"%@ - from %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"SenderString"]];
+            }
         }
         
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

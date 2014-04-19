@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38C9E566-578B-4A4B-934B-BBBCD57493B2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Finance</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</key>
+		<string>https://github.com/koluke/Finance.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Finance.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/koluke/Finance.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FinanceDev</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -27,9 +27,17 @@
 - (int)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     PFQuery *recipientQuery = [PFQuery queryWithClassName:@"XPTransactions"];
-    [recipientQuery whereKey:@"Recipient" equalTo:[PFUser currentUser]];
-    [recipientQuery orderByDescending:@"createdAt"];
+    if (!([[[PFUser currentUser] objectForKey:(@"Superuser")] isEqual:@YES]))   {
+        
+        [recipientQuery whereKey: @"Recipient" equalTo:[PFUser currentUser]];
+        //if current user is not a superuser, constrain query to current user's XP transactions
+    }
+    else    {
+        //else if superuser do not place constraints
+        
+    }
     
+    [recipientQuery orderByDescending:@"createdAt"];
     NSError *error = nil;
     self.transactionArray = [recipientQuery findObjects:&error];
     if(error){
@@ -57,8 +65,17 @@
     }else{
         cell.amountLabel.textColor = [UIColor greenColor];
     }
+    
+    if ([[[PFUser currentUser] objectForKey:@"Superuser"] isEqual:@YES]) {
+        cell.bigLabel.text = [NSString stringWithFormat:@"%@ - to %@",[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"Description"],[[self.transactionArray objectAtIndex: indexPath.row] objectForKey:@"RecipientString"]];
+        //add recipient to end of string if superuser
+    }
+    else    {
+        cell.bigLabel.text = [[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Description"];
+    }
+
     cell.amountLabel.text = [NSString stringWithFormat:@"%@ pts",[[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Amount"]];
-    cell.bigLabel.text = [[self.transactionArray objectAtIndex:indexPath.row] objectForKey:@"Description"];
+    
     return cell;
 }
 
