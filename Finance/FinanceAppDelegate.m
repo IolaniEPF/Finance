@@ -61,7 +61,9 @@ static NSString * const kClientID =
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
     [PFPush storeDeviceToken:newDeviceToken];
-    [PFPush subscribeToChannelInBackground:@"" target:self selector:@selector(subscribeFinished:error:)];
+    if ([PFUser currentUser]){
+        [PFPush subscribeToChannelInBackground:[[PFUser currentUser] objectId] target:self selector:@selector(subscribeFinished:error:)];
+    }
     // Store the deviceToken in the current installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setDeviceTokenFromData:newDeviceToken];
