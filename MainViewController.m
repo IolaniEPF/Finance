@@ -171,6 +171,12 @@ MBProgressHUD *HUD;
     [[NSUserDefaults standardUserDefaults] setObject:[avatarImage getData] forKey:@"plusImage"];
     self.avatarImageView.image = [UIImage roundedImageWithImage:[UIImage imageWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"plusImage"]]];
     
+    NSArray *userArray = [NSArray arrayWithObjects:[[PFUser currentUser] objectId], nil];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setChannels:userArray];
+    [currentInstallation save:&error];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes: UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
     if(error){
         [self loadingError:error];
     }else{
