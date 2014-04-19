@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 
-@interface FeedbackViewController : UIViewController <MBProgressHUDDelegate>
+@interface FeedbackViewController : UIViewController <MBProgressHUDDelegate,UITextViewDelegate>
 @property (retain, nonatomic) IBOutlet UITextView *feedbackText;
 - (IBAction)doneButtonTapped:(id)sender;
 
