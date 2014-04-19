@@ -160,9 +160,3 @@ xcuserdata
 # ...none. Everything is now explained.
 *.xccheckout
 *.xcuserstate
-
-*.xcuserstate
-
-FinanceDev.xcodeproj/project.xcworkspace/xcuserdata/koluke.xcuserdatad/UserInterfaceState.xcuserstate
-
-*.xcuserstate
