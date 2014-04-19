@@ -703,22 +703,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/koluke/Documents/Iolani_EPF/Finance,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/Finance-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
-					"\\\"$(SRCROOT)/Finance\\\"",
-					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
+					"\\\"$(SRCROOT)/TestFlightSDK2\\\"",
+					"\\\"$(SRCROOT)\\\"",
+					"$(PROJECT_DIR)/Finance",
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework/GoogleOpenSource,
+					"$(PROJECT_DIR)/GoogleOpenSource.framework/GoogleOpenSource",
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
+					"$(PROJECT_DIR)/GooglePlus.framework/GooglePlus",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -734,22 +734,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					/Users/koluke/Documents/Iolani_EPF/Finance,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/Finance-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\"",
-					"\\\"$(SRCROOT)/Finance\\\"",
-					/Users/koluke/Documents/Iolani_EPF/Finance/Finance,
+					"\\\"$(SRCROOT)/TestFlightSDK2\\\"",
+					"\\\"$(SRCROOT)\\\"",
+					"$(PROJECT_DIR)/Finance",
 				);
 				OTHER_LDFLAGS = (
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework/GoogleOpenSource,
+					"$(PROJECT_DIR)/GoogleOpenSource.framework/GoogleOpenSource",
 					"-force_load",
-					/Users/blaketsuzaki/Development/Finance/GooglePlus.framework/GooglePlus,
+					"$(PROJECT_DIR)/GooglePlus.framework/GooglePlus",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
