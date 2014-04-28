@@ -105,7 +105,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1206DA5417BF193D004DC20D /* FinanceDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1206DA5417BF193D004DC20D /* Finance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1206DA5717BF193D004DC20D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1206DA5917BF193D004DC20D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1206DA5B17BF193D004DC20D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -290,7 +290,7 @@
 		1206DA5517BF193D004DC20D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1206DA5417BF193D004DC20D /* FinanceDev.app */,
+				1206DA5417BF193D004DC20D /* Finance.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -507,9 +507,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1206DA5317BF193D004DC20D /* FinanceDev */ = {
+		1206DA5317BF193D004DC20D /* Finance */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "FinanceDev" */;
+			buildConfigurationList = 1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "Finance" */;
 			buildPhases = (
 				1206DA5017BF193D004DC20D /* Sources */,
 				1206DA5117BF193D004DC20D /* Frameworks */,
@@ -519,9 +519,9 @@
 			);
 			dependencies = (
 			);
-			name = FinanceDev;
+			name = Finance;
 			productName = Finance;
-			productReference = 1206DA5417BF193D004DC20D /* FinanceDev.app */;
+			productReference = 1206DA5417BF193D004DC20D /* Finance.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -547,7 +547,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "FinanceDev" */;
+			buildConfigurationList = 1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "Finance" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -559,7 +559,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1206DA5317BF193D004DC20D /* FinanceDev */,
+				1206DA5317BF193D004DC20D /* Finance */,
 			);
 		};
 /* End PBXProject section */
@@ -758,7 +758,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -775,7 +775,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/GooglePlus.framework/GooglePlus",
 				);
-				PRODUCT_NAME = FinanceDev;
+				PRODUCT_NAME = Finance;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -795,7 +795,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -812,7 +812,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/GooglePlus.framework/GooglePlus",
 				);
-				PRODUCT_NAME = FinanceDev;
+				PRODUCT_NAME = Finance;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -862,7 +862,7 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Finance/FinanceDev-Prefix.pch";
+				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -879,7 +879,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/GooglePlus.framework/GooglePlus",
 				);
-				PRODUCT_NAME = FinanceDev;
+				PRODUCT_NAME = Finance;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -889,7 +889,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "FinanceDev" */ = {
+		1206DA4F17BF193D004DC20D /* Build configuration list for PBXProject "Finance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1206DA7517BF193E004DC20D /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "FinanceDev" */ = {
+		1206DA7717BF193E004DC20D /* Build configuration list for PBXNativeTarget "Finance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1206DA7817BF193E004DC20D /* Debug */,
