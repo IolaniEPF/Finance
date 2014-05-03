@@ -1,5 +1,11 @@
 #'Iolani Economics of Personal Finance
 ===
+###Travis CI Build Status
+[![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=master)](https://travis-ci.org/IolaniEPF/Finance) on `master` branch
+
+[![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=dev)](https://travis-ci.org/IolaniEPF/Finance) on `dev` branch
+
+===
 ##About this project
 This project started as part of an effort to rework the existing Economics of Personal Finance curriculum at ['Iolani School](http://www.iolani.org/).  Currently, the app functions as a virtual checkbook and achievement system for students to easily make virtual payments while remaining easy for teacher(s) to manage balances, experience points, and other relevant student information.
 
