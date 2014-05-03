@@ -1,5 +1,11 @@
 #'Iolani Economics of Personal Finance
 ===
+###Travis CI Build Status
+[![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=master)](https://travis-ci.org/IolaniEPF/Finance) on `master` branch
+
+[![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=dev)](https://travis-ci.org/IolaniEPF/Finance) on `dev` branch
+
+===
 ##About this project
 This project started as part of an effort to rework the existing Economics of Personal Finance curriculum at ['Iolani School](http://www.iolani.org/).  Currently, the app functions as a virtual checkbook and achievement system for students to easily make virtual payments while remaining easy for teacher(s) to manage balances, experience points, and other relevant student information.
 
@@ -41,9 +47,19 @@ A `Transaction` represents a payment to or from a student and will either credit
 **NOTE: `Transaction`s and `XPTransaction`s should *never* be modified once created.  If the Parse database receives an updated transaction from the Finance app client, it will process it like a new transaction and re-add it to a student's balance.  Instead, if transactions need to be modified or otherwise corrected, the object should be destroyed and an identical object with corrected values should be sent to Parse instead.  This preserves the integrity of a student's balance.  *Work is underway to create a [Cloud Code](https://parse.com) function to automatically recalculate balances if data integrity is disrupted.***
 
 `Badge`s are used by the teacher to reward one or more students for special occasions, achievements, or innovative thinking.  To introduce students to badges, each student receives a badge at the start of the course for successfully installing and setting up the app.
+
+Each `PFUser` object represents a student and has its own `Avatar` and `Balance` objects to store profile and account balance information.  An `Avatar` contains references to a student's profile and background images, while `Balance` objects store a student's available cash balance and experience points.
+
+A `Transaction` represents a payment to or from a student and will either credit or debit their account balance accordingly.  Each `XPTransaction` holds points received from a teacher to a student for completing a "quest" or other class assignment, with the cumulative XP total being stored as part of a student's balance.
+
+`Balance`s contain data fields for storing a students cash balance (determined by `Transaction`s) and XP total (determined by `XPTransaction`s).  A `Transaction` contains pointers about the sender and recipient of the data, representing a debit from the sender's account and a credit to the recipient's account.  `Transaction`s also contain data about the transaction's creator, in the event that the transaction is challenged by the student, or to note who initiated a payment/deposit.
+
+**NOTE: `Transaction`s and `XPTransaction`s should *never* be modified once created.  If the Parse database receives an updated transaction from the Finance app client, it will process it like a new transaction and re-add it to a student's balance.  Instead, if transactions need to be modified or otherwise corrected, the object should be destroyed and an identical object with corrected values should be sent to Parse instead.  This preserves the integrity of a student's balance.  *Work is underway to create a [Cloud Code](https://parse.com) function to automatically recalculate balances if data integrity is disrupted.***
+
+`Badge`s are used by the teacher to reward one or more students for special occasions, achievements, or innovative thinking.  To introduce students to badges, each student receives a badge at the start of the course for successfully installing and setting up the app.
 #Cloud Code
 ===
-Parse provides a server-side data processing feature called Cloud Code, which allows developers to intercept object saves, verify data, and manipulate data within that Parse instance.  We've elected to use Parse with Cloud Code as a database editing tool for several key reasons.
+Parse provides a server-side data processing feature called Cloud Code, which allows developers to intercept object saves, verify data, and manipulate data within a particular Parse instance.  We've elected to use Parse with Cloud Code as a database editing tool for several key reasons.
 
 1. Parse comes with Cloud Code support built in.  This means that there are no hoops or hurdles to pass in order to get it working.
 2. Server-side data processing allows us to verify data before it is allowed to be saved in our database.  This maintains consistency across the data and allows us to modify objects to conform to our format.  manipulating requests and forces all balance calculation to be performed by Parse.
