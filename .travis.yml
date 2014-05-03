@@ -4,3 +4,9 @@ xcode_project: Finance.xcodeproj
 
 xcode_sdk: 7.0
 # Test using iOS 7.0
+
+before_install: 
+	- brew update
+	- brew install xctool
+
+script: xctool -workspace project.xcworkspace  -scheme Finance test
