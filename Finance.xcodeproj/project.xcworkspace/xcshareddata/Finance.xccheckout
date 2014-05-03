@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>38C9E566-578B-4A4B-934B-BBBCD57493B2</string>
+	<string>F2AD2346-8C3C-46E2-B57D-69618A0DA42F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Finance</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</key>
-		<string>https://github.com/koluke/Finance.git</string>
+		<key>4150AF74-EEB1-4E8A-9D90-03D02C090D95</key>
+		<string>ssh://github.com/IolaniEPF/Finance.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Finance.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</key>
+		<key>4150AF74-EEB1-4E8A-9D90-03D02C090D95</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/koluke/Finance.git</string>
+	<string>ssh://github.com/IolaniEPF/Finance.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</string>
+	<string>4150AF74-EEB1-4E8A-9D90-03D02C090D95</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AF7AE6EC-237B-45D5-8DA5-D1111ABBA26C</string>
+			<string>4150AF74-EEB1-4E8A-9D90-03D02C090D95</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FinanceDev</string>
+			<string>Finance</string>
 		</dict>
 	</array>
 </dict>

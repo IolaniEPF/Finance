@@ -92,6 +92,7 @@
 		45025ECA1902742100AD1186 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC71902742100AD1186 /* release_notes.md */; };
 		45025ECB1902742100AD1186 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC81902742100AD1186 /* README.md */; };
 		45025ECC1902742100AD1186 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45025EC91902742100AD1186 /* libTestFlight.a */; };
+		4517EBAE1915A1ED000A1A27 /* Finance-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4517EBAC1915A1ED000A1A27 /* Finance-Info.plist */; };
 		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
 		453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E8B001893209B00E5F9F4 /* Parse.framework */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -109,10 +110,8 @@
 		1206DA5717BF193D004DC20D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1206DA5917BF193D004DC20D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1206DA5B17BF193D004DC20D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1206DA5F17BF193D004DC20D /* FinanceDev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinanceDev-Info.plist"; sourceTree = "<group>"; };
 		1206DA6117BF193D004DC20D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1206DA6317BF193D004DC20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1206DA6517BF193D004DC20D /* FinanceDev-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinanceDev-Prefix.pch"; sourceTree = "<group>"; };
 		1206DA6617BF193D004DC20D /* FinanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinanceAppDelegate.h; sourceTree = "<group>"; };
 		1206DA6717BF193D004DC20D /* FinanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinanceAppDelegate.m; sourceTree = "<group>"; };
 		1206DA6917BF193D004DC20D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -227,6 +226,8 @@
 		45025EC71902742100AD1186 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		45025EC81902742100AD1186 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		45025EC91902742100AD1186 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		4517EBAC1915A1ED000A1A27 /* Finance-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Finance-Info.plist"; sourceTree = "<group>"; };
+		4517EBAD1915A1ED000A1A27 /* Finance-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Finance-Prefix.pch"; sourceTree = "<group>"; };
 		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		453E8B001893209B00E5F9F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = /Users/blaketsuzaki/Development/Finance/GooglePlus.framework; sourceTree = "<absolute>"; };
@@ -382,10 +383,10 @@
 				123B6B8517C4B83B00EB7138 /* UIImage+RoundedImage.h */,
 				123B6B8617C4B83B00EB7138 /* UIImage+RoundedImage.m */,
 				123B6B3F17C3FC0100EB7138 /* BankLogo.png */,
-				1206DA5F17BF193D004DC20D /* FinanceDev-Info.plist */,
+				4517EBAC1915A1ED000A1A27 /* Finance-Info.plist */,
+				4517EBAD1915A1ED000A1A27 /* Finance-Prefix.pch */,
 				1206DA6017BF193D004DC20D /* InfoPlist.strings */,
 				1206DA6317BF193D004DC20D /* main.m */,
-				1206DA6517BF193D004DC20D /* FinanceDev-Prefix.pch */,
 				126B471417C75E8D00E3CE12 /* Done.png */,
 				126B470517C7588500E3CE12 /* Forward.png */,
 				1206DA6917BF193D004DC20D /* Default.png */,
@@ -587,6 +588,7 @@
 				45025ECA1902742100AD1186 /* release_notes.md in Resources */,
 				4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */,
 				1228736417CCBA3200F36BEF /* iPad-Retina.png in Resources */,
+				4517EBAE1915A1ED000A1A27 /* Finance-Info.plist in Resources */,
 				1228736617CCBF1F00F36BEF /* 53-house.png in Resources */,
 				1228736817CCBF7100F36BEF /* 172-pricetag.png in Resources */,
 				1228736A17CCBFA400F36BEF /* 192-credit-card.png in Resources */,
@@ -759,7 +761,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
-				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Finance/Finance-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -796,7 +798,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
-				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Finance/Finance-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -863,7 +865,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
-				INFOPLIST_FILE = "Finance/FinanceDev-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Finance/Finance-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
