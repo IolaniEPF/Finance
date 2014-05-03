@@ -1,1 +1,6 @@
 language: objective-c
+
+xcode_project: Finance.xcodeproj
+
+xcode_sdk: 7.0
+# Test using iOS 7.0
