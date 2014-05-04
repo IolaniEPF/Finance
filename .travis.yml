@@ -11,4 +11,4 @@ xcode_scheme: Finance
 # - brew update
 # - brew install xctool
 
-script: xctool -workspace project.xcworkspace  -scheme Finance test
+script: xctool -workspace project  -scheme Finance test
