@@ -23,8 +23,9 @@ For processing login data and integration with [Google+](https://plus.google.com
 2. Register for an Apple Developer account through the [Apple Developer Portal](http://developer.apple.com).  This isn't *100%* necessary, but it will be if you want to run your app on an iOS device.
 3. On the Mac you plan to use for development, download and install [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the Mac App Store.
 4. Once finished, open Xcode and sign in using the Apple ID that you created a developer account with.
-5. Clone the repository into the location of your choosing on your hard drive.
-6. You're finished!  You should now have the tools necessary to develop, build, and run the Finance app.
+5. Clone the repository into the location of your choosing on your hard drive. (Run `git clone https://github.com/IolaniEPF/Finance` from the command line in your desired folder to clone the repository over HTTPS).
+6. You're finished!  You should now have the tools necessary to develop, build, and run the Finance app.  Read on if you need help opening the project and running it.
+7. Once you've cloned the repository, navigate to its folder on your hard drive and double-click the `Finance.xcodeproj` container.  This will launch Xcode and open the project.
 
 ###Contributing to the project
 If you are not a member of the IolaniEPF organization, please fork the project, make any changes you feel are necessary, and open a pull request that best describes the changes you are making and why you feel they are necessary.
