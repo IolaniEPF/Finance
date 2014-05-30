@@ -19,9 +19,9 @@ For beta testing, distribution, and remote error logging, we use TestFlight and 
 
 For processing login data and integration with [Google+](https://plus.google.com/), the Google and Google+ SDKs allow us to create sign-in buttons on the app welcome screen.  This scheme allows us to take advantage of the fact that all 'Iolani students will have a Google account, reducing the need to deal with separate accounts, password management, etc. associated with a separate database structure. **NOTE: The Google SDKs have several dependencies on built-in iOS frameworks.  As the Google SDKs are updated, the list is subject to change at any time.  The updated list of frameworks to include can be found on [Google's Developer site](https://developer.google.com/).**
 ###Setting up a development machine
-1. If you're reading this on [GitHub](https://github.com/), it's a safe bet that you have a GitHub account.  If not, register for one [here]()
-2. Register for an Apple Developer account through the [Apple Developer Portal](http://developer.apple.com).
-3. On the Mac you plan to use for development, download and install [Xcode](https://itunes.apple.com/app/id?=) from the Mac App Store.
+1. If you're reading this on [GitHub](https://github.com/), it's a safe bet that you have a GitHub account.  If not, register for one [here](https://github.com/join).
+2. Register for an Apple Developer account through the [Apple Developer Portal](http://developer.apple.com).  This isn't *100%* necessary, but it will be if you want to run your app on an iOS device.
+3. On the Mac you plan to use for development, download and install [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the Mac App Store.
 4. Once finished, open Xcode and sign in using the Apple ID that you created a developer account with.
 5. Clone the repository into the location of your choosing on your hard drive.
 6. You're finished!  You should now have the tools necessary to develop, build, and run the Finance app.
