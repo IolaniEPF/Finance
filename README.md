@@ -1,18 +1,15 @@
 #'Iolani Economics of Personal Finance
-===
 ###Travis CI Build Status
 [![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=master)](https://travis-ci.org/IolaniEPF/Finance) on `master` branch
 
 [![Build Status](https://travis-ci.org/IolaniEPF/Finance.svg?branch=dev)](https://travis-ci.org/IolaniEPF/Finance) on `dev` branch
 
-===
 ##About this project
 This project started as part of an effort to rework the existing Economics of Personal Finance curriculum at ['Iolani School](http://www.iolani.org/).  Currently, the app functions as a virtual checkbook and achievement system for students to easily make virtual payments while remaining easy for teacher(s) to manage balances, experience points, and other relevant student information.
 
 This app's primary function is to create the framework necessary to support "gamified learning", and we are hoping to expand this app to be compatible with a variety of teaching, learning, and classroom styles.  In the future, we plan to eventually create a framework that can track fewer or more student variables.  These are currently XP and money, but could potentially include stocks from a stock market simulation, 
 
 ##Getting Started
-===
 ###Introduction
 The Finance app is written in Objective-C, and was built using Apple's Xcode IDE.  Originally built for iOS 6 on Xcode 4, the app has been transitioned over to provide iOS 7 and Xcode 5 compatibility.  For centralized database management, we use [Parse](https://parse.com), since it provides pseudorelational database capabilities and push notifications through their API.
 ###Dependencies and Frameworks
@@ -32,9 +29,7 @@ For processing login data and integration with [Google+](https://plus.google.com
 ###Contributing to the project
 If you are not a member of the IolaniEPF organization, please fork the project, make any changes you feel are necessary, and open a pull request that best describes the changes you are making and why you feel they are necessary.
 #Project overview
-===
 ##General data structure
-
 ###User data-holding objects
 The Finance app uses several types of non-primitive objects in conjunction to store data about each student.  These include `PFUser`s, `Avatar`s,`Transaction`s, `XPTransaction`s, `Badge`s, and `Balance`s.
 
@@ -48,7 +43,6 @@ A `Transaction` represents a payment to or from a student and will either credit
 
 `Badge`s are used by the teacher to reward one or more students for special occasions, achievements, or innovative thinking.  To introduce students to badges, each student receives a badge at the start of the course for successfully installing and setting up the app.
 #Cloud Code
-===
 Parse provides a server-side data processing feature called Cloud Code, which allows developers to intercept object saves, verify data, and manipulate data within that Parse instance.  We've elected to use Parse with Cloud Code as a database editing tool for several key reasons.
 
 1. Parse comes with Cloud Code support built in.  This means that there are no hoops or hurdles to pass in order to get it working.
@@ -58,5 +52,4 @@ Parse provides a server-side data processing feature called Cloud Code, which al
 5. It is incredibly easy to alter the data structure.  Cloud Code can be redeployed in a matter of seconds, without needing to redistribute the app.  This is helpful for performing maintenance, as we could deploy a Cloud Code model that rejects any saves within a certain time period, or modify it to penalize late transactions or give bonuses to early work submittal.
 
 #Contributing
-===
 We'd love for you to contribute to our project.  For contributing guidelines, please read the `CONTRIBUTING.md` file to get started.
