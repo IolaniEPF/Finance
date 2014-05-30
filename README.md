@@ -52,4 +52,6 @@ Parse provides a server-side data processing feature called Cloud Code, which al
 5. It is incredibly easy to alter the data structure.  Cloud Code can be redeployed in a matter of seconds, without needing to redistribute the app.  This is helpful for performing maintenance, as we could deploy a Cloud Code model that rejects any saves within a certain time period, or modify it to penalize late transactions or give bonuses to early work submittal.
 
 #Contributing
-We'd love for you to contribute to our project.  For contributing guidelines, please read the `CONTRIBUTING.md` file to get started.
+We'd love for you to contribute to our project.  For contributing guidelines, please read the `CONTRIBUTING.md` file to get started.  Feel free to fork our project and send us a pull request once you've read the contributing documentation and made a change!
+
+For information about GitHub pull requests, please read the [documentation](https://help.github.com/articles/using-pull-requests) available on GitHub.
