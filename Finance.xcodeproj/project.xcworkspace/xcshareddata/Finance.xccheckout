@@ -10,29 +10,29 @@
 	<string>Finance</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4150AF74-EEB1-4E8A-9D90-03D02C090D95</key>
-		<string>ssh://github.com/IolaniEPF/Finance.git</string>
+		<key>E78F3C95DB4027B726258ED51BC529F0568E99F8</key>
+		<string>github.com:IolaniEPF/Finance.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Finance.xcodeproj/project.xcworkspace</string>
+	<string>Finance.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4150AF74-EEB1-4E8A-9D90-03D02C090D95</key>
+		<key>E78F3C95DB4027B726258ED51BC529F0568E99F8</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/IolaniEPF/Finance.git</string>
+	<string>github.com:IolaniEPF/Finance.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4150AF74-EEB1-4E8A-9D90-03D02C090D95</string>
+	<string>E78F3C95DB4027B726258ED51BC529F0568E99F8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4150AF74-EEB1-4E8A-9D90-03D02C090D95</string>
+			<string>E78F3C95DB4027B726258ED51BC529F0568E99F8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Finance</string>
 		</dict>

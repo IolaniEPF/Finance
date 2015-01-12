@@ -23,7 +23,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.iolani.FinanceDev</string>
+	<string>org.iolani.Finance</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -40,10 +40,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>org.iolani.FinanceDev</string>
+			<string>org.iolani.Finance</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>org.iolani.FinanceDev</string>
+				<string>org.iolani.Finance</string>
 			</array>
 		</dict>
 	</array>

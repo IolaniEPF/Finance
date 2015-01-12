@@ -14,7 +14,7 @@
 @implementation FinanceAppDelegate
 
 static NSString * const kClientID =
-@"800860225898-v0cbku19ojugg8aulvpjl4ve4o55pvrv.apps.googleusercontent.com";
+@"800860225898-ajsrqq6vgfms95tsebfeqr4nkrq4fgd6.apps.googleusercontent.com";
 
 - (void)dealloc
 {
