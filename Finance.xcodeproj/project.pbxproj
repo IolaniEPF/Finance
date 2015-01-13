@@ -92,7 +92,6 @@
 		45025ECA1902742100AD1186 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC71902742100AD1186 /* release_notes.md */; };
 		45025ECB1902742100AD1186 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC81902742100AD1186 /* README.md */; };
 		45025ECC1902742100AD1186 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45025EC91902742100AD1186 /* libTestFlight.a */; };
-		4517EBAE1915A1ED000A1A27 /* Finance-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4517EBAC1915A1ED000A1A27 /* Finance-Info.plist */; };
 		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
 		453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E8B001893209B00E5F9F4 /* Parse.framework */; };
 		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -532,7 +531,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Finance;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "'Iolani School";
 				TargetAttributes = {
 					1206DA5317BF193D004DC20D = {
@@ -588,7 +587,6 @@
 				45025ECA1902742100AD1186 /* release_notes.md in Resources */,
 				4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */,
 				1228736417CCBA3200F36BEF /* iPad-Retina.png in Resources */,
-				4517EBAE1915A1ED000A1A27 /* Finance-Info.plist in Resources */,
 				1228736617CCBF1F00F36BEF /* 53-house.png in Resources */,
 				1228736817CCBF7100F36BEF /* 172-pricetag.png in Resources */,
 				1228736A17CCBFA400F36BEF /* 192-credit-card.png in Resources */,
