@@ -48,8 +48,6 @@
 		122873B617CF7CCB00F36BEF /* TransactionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 122873B517CF7CCA00F36BEF /* TransactionViewCell.m */; };
 		122873B917CF7CDA00F36BEF /* XPPointsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 122873B817CF7CD900F36BEF /* XPPointsViewCell.m */; };
 		123B6B4017C3FC0100EB7138 /* BankLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 123B6B3F17C3FC0100EB7138 /* BankLogo.png */; };
-		123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */; };
-		123B6B4617C4005C00EB7138 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 123B6B4517C4005C00EB7138 /* GooglePlus.bundle */; };
 		123B6B4817C406F900EB7138 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4717C406F900EB7138 /* Security.framework */; };
 		123B6B5017C4079300EB7138 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */; };
 		123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B5B17C49D5300EB7138 /* libz.dylib */; };
@@ -64,7 +62,6 @@
 		123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7C17C49E5100EB7138 /* AdSupport.framework */; };
 		123B6B8217C49EAA00EB7138 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */; };
 		123B6B8317C49EC900EB7138 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B7F17C49E9B00EB7138 /* libz.1.1.3.dylib */; };
-		123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 123B6B4517C4005C00EB7138 /* GooglePlus.bundle */; };
 		123B6B8717C4B95A00EB7138 /* UIImage+RoundedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 123B6B8617C4B83B00EB7138 /* UIImage+RoundedImage.m */; };
 		123B6B8D17C5475500EB7138 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 123B6B8C17C5475500EB7138 /* MainViewController.m */; };
 		12505E6217D1C63E00812A2D /* NewBadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 12505E6117D1C63E00812A2D /* NewBadge.png */; };
@@ -92,9 +89,11 @@
 		45025ECA1902742100AD1186 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC71902742100AD1186 /* release_notes.md */; };
 		45025ECB1902742100AD1186 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 45025EC81902742100AD1186 /* README.md */; };
 		45025ECC1902742100AD1186 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45025EC91902742100AD1186 /* libTestFlight.a */; };
+		45254DAF1A64B5850017EC29 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45254DAE1A64B5850017EC29 /* GooglePlus.framework */; };
+		45254DB11A64B59A0017EC29 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45254DB01A64B59A0017EC29 /* GoogleOpenSource.framework */; };
+		45254DB31A64B5EC0017EC29 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 45254DB21A64B5EC0017EC29 /* GooglePlus.bundle */; };
 		453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453538A7181B8CB900C4C677 /* StoreKit.framework */; };
 		453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453E8B001893209B00E5F9F4 /* Parse.framework */; };
-		456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456B821817FFF2F400461B3F /* GooglePlus.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		456E4F58182B1D6C0050CAC4 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E4F5A182B1D6C0050CAC4 /* iPhone.storyboard */; };
 		4574DE4318021B3B0005CE39 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4574DE4118021B3B0005CE39 /* MainStoryboard.storyboard */; };
 		458FE35B18C1874C009EC308 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458FE35A18C1874C009EC308 /* AddressBook.framework */; };
@@ -164,8 +163,6 @@
 		122873B717CF7CD800F36BEF /* XPPointsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPointsViewCell.h; sourceTree = "<group>"; };
 		122873B817CF7CD900F36BEF /* XPPointsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPointsViewCell.m; sourceTree = "<group>"; };
 		123B6B3F17C3FC0100EB7138 /* BankLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BankLogo.png; sourceTree = "<group>"; };
-		123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = /Users/blaketsuzaki/Development/Finance/GoogleOpenSource.framework; sourceTree = "<absolute>"; };
-		123B6B4517C4005C00EB7138 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		123B6B4717C406F900EB7138 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		123B6B5B17C49D5300EB7138 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -227,9 +224,11 @@
 		45025EC91902742100AD1186 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		4517EBAC1915A1ED000A1A27 /* Finance-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Finance-Info.plist"; sourceTree = "<group>"; };
 		4517EBAD1915A1ED000A1A27 /* Finance-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Finance-Prefix.pch"; sourceTree = "<group>"; };
+		45254DAE1A64B5850017EC29 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		45254DB01A64B59A0017EC29 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		45254DB21A64B5EC0017EC29 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		453538A7181B8CB900C4C677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		453E8B001893209B00E5F9F4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		456B821817FFF2F400461B3F /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = /Users/blaketsuzaki/Development/Finance/GooglePlus.framework; sourceTree = "<absolute>"; };
 		456E4F59182B1D6C0050CAC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
 		4574DE4218021B3B0005CE39 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		458FE35A18C1874C009EC308 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -258,7 +257,6 @@
 				123B6B7D17C49E5100EB7138 /* AdSupport.framework in Frameworks */,
 				123B6B7B17C49E4C00EB7138 /* Social.framework in Frameworks */,
 				123B6B7917C49E4500EB7138 /* Accounts.framework in Frameworks */,
-				123B6B4417C4004A00EB7138 /* GoogleOpenSource.framework in Frameworks */,
 				45025ECC1902742100AD1186 /* libTestFlight.a in Frameworks */,
 				123B6B7717C49E3D00EB7138 /* AudioToolbox.framework in Frameworks */,
 				123B6B7517C49E3800EB7138 /* CFNetwork.framework in Frameworks */,
@@ -267,11 +265,11 @@
 				453538A8181B8CB900C4C677 /* StoreKit.framework in Frameworks */,
 				123B6B6B17C49E0800EB7138 /* CoreData.framework in Frameworks */,
 				453E8B011893209B00E5F9F4 /* Parse.framework in Frameworks */,
-				123B6B8417C4A01700EB7138 /* GooglePlus.bundle in Frameworks */,
 				123B6B5C17C49D5300EB7138 /* libz.dylib in Frameworks */,
+				45254DB11A64B59A0017EC29 /* GoogleOpenSource.framework in Frameworks */,
+				45254DAF1A64B5850017EC29 /* GooglePlus.framework in Frameworks */,
 				123B6B7117C49E2B00EB7138 /* MobileCoreServices.framework in Frameworks */,
 				123B6B6F17C49E2400EB7138 /* QuartzCore.framework in Frameworks */,
-				456B821917FFF2F400461B3F /* GooglePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +296,7 @@
 		1206DA5617BF193D004DC20D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45254DB21A64B5EC0017EC29 /* GooglePlus.bundle */,
 				458FE36218C187A3009EC308 /* MediaPlayer.framework */,
 				458FE36018C18799009EC308 /* CoreText.framework */,
 				458FE35E18C18782009EC308 /* CoreMotion.framework */,
@@ -305,7 +304,6 @@
 				458FE35A18C1874C009EC308 /* AddressBook.framework */,
 				453E8B001893209B00E5F9F4 /* Parse.framework */,
 				453538A7181B8CB900C4C677 /* StoreKit.framework */,
-				456B821817FFF2F400461B3F /* GooglePlus.framework */,
 				123B6B8117C49EAA00EB7138 /* libsqlite3.dylib */,
 				123B6B7F17C49E9B00EB7138 /* libz.1.1.3.dylib */,
 				123B6B7C17C49E5100EB7138 /* AdSupport.framework */,
@@ -320,8 +318,8 @@
 				123B6B6917C49DEA00EB7138 /* CoreData.framework */,
 				123B6B4F17C4079300EB7138 /* SystemConfiguration.framework */,
 				123B6B4717C406F900EB7138 /* Security.framework */,
-				123B6B4517C4005C00EB7138 /* GooglePlus.bundle */,
-				123B6B4217C4004A00EB7138 /* GoogleOpenSource.framework */,
+				45254DB01A64B59A0017EC29 /* GoogleOpenSource.framework */,
+				45254DAE1A64B5850017EC29 /* GooglePlus.framework */,
 				1206DA5717BF193D004DC20D /* UIKit.framework */,
 				1206DA5917BF193D004DC20D /* Foundation.framework */,
 				1206DA5B17BF193D004DC20D /* CoreGraphics.framework */,
@@ -569,7 +567,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123B6B4617C4005C00EB7138 /* GooglePlus.bundle in Resources */,
 				1206DA6217BF193D004DC20D /* InfoPlist.strings in Resources */,
 				1206DA6A17BF193D004DC20D /* Default.png in Resources */,
 				1206DA6C17BF193D004DC20D /* Default@2x.png in Resources */,
@@ -595,6 +592,7 @@
 				1228737017CCC8D200F36BEF /* Refresh.png in Resources */,
 				1228737217CCC9CA00F36BEF /* Blank.png in Resources */,
 				1228738817CD6AC500F36BEF /* TabBack.png in Resources */,
+				45254DB31A64B5EC0017EC29 /* GooglePlus.bundle in Resources */,
 				1228738F17CD84B000F36BEF /* Plus.png in Resources */,
 				12505E6217D1C63E00812A2D /* NewBadge.png in Resources */,
 				45025ECB1902742100AD1186 /* README.md in Resources */,
@@ -760,10 +758,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Finance/Finance-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\\\\\\\\\"",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Finance",
 					"$(PROJECT_DIR)/Finance",
@@ -797,10 +794,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Finance/Finance-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Finance/Finance-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\\\\\\\\\"$(SRCROOT)/Finance/TestFlightSDK2\\\\\\\\\\\\\\\"",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Finance",
 					"$(PROJECT_DIR)/Finance",
