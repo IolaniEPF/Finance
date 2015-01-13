@@ -20,6 +20,6 @@ env:
   - APPLE_CERT=apple
   - DISTRIBUTION_CERT=iolani-distro
   - TESTFLIGHT_BRANCH=master
-  - secure: RGYL/PhhsNgXvc1CgvtOhCqrvxNI7moBj9y+uoaPclD5qUiflnTptstGZILyqIXrdbtkYtNgKSrx+XXueSTtH62Yt3HUabASlar2PRKBV9kdlebdH61uFaW6es0jE2M4ZGAwC/PS3auq+skWbiI43NQDmMvba47xrRAJ2nqOOE0=
+  - secure: Hcz/qguXdqm9hdu2/3WHb/yormi9C/16V/3mjIe95zS75jGUUCzkUFpA2ty+C007iMdT8awkWPW5ghgUo2wBkO7QGLBBrVHpYIAnaoZx4QqYGJVL0E6plUxGmP8c0pK3EnUucqEfq7ds6tsHhdIZgUUE5m6DyrHWCOOpjven9eA=
   - secure: rmvy38mdAUIQw39nSvO7HE8/0BovXd/qkmoJtsEr2CVF2urcZ8Hm3SDlCpg8G1KiUk6QO3NpeRjzFglUN0F902YcdJCuNt8lojEKmzmnNs+ps/AaNzoORuaobDbuO8hVvmZV58h6+p+s3gv6ZFFYG+h7+eD3i2CRX+Y2dkovPSc=
   - secure: koxwFLehi/TsbI/thojTmK89r+i8tciiDX9njmJIKqd0l9bTt77LtdtxfQzfJMf1xQokpaaDpqulhxb0tGfQl0zB/5WEhEhTKvh2qJyurg9zCyvoRLE583XVaJiTfQnfzA5TplD/mpeHx1+ZCNkX2kLfTSgcrTLnQC+E1g8mDbg=
